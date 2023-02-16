@@ -43,7 +43,7 @@ Param(
 )
 
 # Start the PowerShell ISE process
-& python.exe .\figlet.py --message $message
+& python.exe .\py\figlet.py --message $message
 
 
 <# 
