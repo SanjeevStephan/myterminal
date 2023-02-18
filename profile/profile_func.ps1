@@ -1,4 +1,6 @@
 
+#-------------------- Include Below File ----------------
+#. "$HOME\Documents\PowerShell\profile_include.ps1"
 #-------------------- Functions {Pass-Argument}----------------
 function helpnow(){
 
@@ -71,4 +73,9 @@ function greet($name,$age) {
 }
 function edit($filename){
 Start-Process powershell_ise.exe $filename
+}
+function nano($filename){
+#Edit file with format (file_name) in terminal itself (require no-space)
+#Cannot Edit files with format 'sample text.txt' format (it has space)
+Start-Process $profile_source\nano.exe "$filename"
 }
