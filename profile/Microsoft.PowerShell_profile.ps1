@@ -43,10 +43,19 @@ function refresh() {
 }
 function backup() {
 # Copy all files & directories from the $HOME/document/powershell directory to the destination directory
+cd $profile_source
 Copy-Item -Path * -Destination $profile_backup_path -Recurse -Force
 Write-Host "All Files Copied $profile_backup_path"
 cd $profile_backup_path
 dir 
+}
+function window() {
+#Open Window in Current Directory
+# Start the PowerShell ISE process
+Start-Process explorer.exe $pwd
+}
+function listhash() {
+Get-ChildItem | Select-Object LastWriteTime, Length, Name, @{Name="FileHash";Expression={(Get-FileHash $_.FullName).Hash}}
 }
 #-------------------- Script Execution Begins from here-----
 initialize  #calling the initialize() function 
