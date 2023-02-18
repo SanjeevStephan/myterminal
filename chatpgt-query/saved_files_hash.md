@@ -1,8 +1,7 @@
 powershell script to grenerate the hashes of the files in the current directory and store the value in the json file name 'saved_hashes.json' and load the data from the json file in a nice format if it exist otherwise create one
 Sure, here's a PowerShell script that should do what you're asking for:
 
-powershell
-Copy code
+code
 # Define the name of the JSON file to save the hashes to
 $hashesFile = "saved_hashes.json"
 
