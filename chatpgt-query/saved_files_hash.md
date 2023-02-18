@@ -2,7 +2,7 @@ powershell script to grenerate the hashes of the files in the current directory 
 Sure, here's a PowerShell script that should do what you're asking for:
 
  
-```
+<code>
 # Define the name of the JSON file to save the hashes to
 $hashesFile = "saved_hashes.json"
 
@@ -30,7 +30,8 @@ $savedHashes | ConvertTo-Json | Set-Content $hashesFile
 # Display the saved hashes in a nice format
 $savedHashes.GetEnumerator() | Sort-Object Name | Format-Table Name, Value -AutoSize
 
-```
+<code>
+ 
 Here's a brief explanation of how the script works:
 
 First, we define the name of the JSON file to save the hashes to.
