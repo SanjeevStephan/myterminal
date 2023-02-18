@@ -70,5 +70,5 @@ function greet($name,$age) {
     Write-Host "Hello, My Name is $name and i am $age year old"
 }
 function edit($filename){
-powershell_ise.exe $filename
+Start-Process powershell_ise.exe $filename
 }
