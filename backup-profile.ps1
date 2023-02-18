@@ -31,21 +31,25 @@
 
 #cp * ~/Documents/PowerShell
 
+$source = "$HOME\Documents\PowerShell\Microsoft.PowerShell_profile.ps1"
+$destination = "D:\terminal"
 
-$source = "D:\terminal"
-$destination = "$HOME\Documents\PowerShell"
-$backup_script = "D:\terminal\backup-profile.ps1"
 
 # Create the destination directory if it does not exist
 #if (!(Test-Path -Path $destination)) {
 #    New-Item -ItemType Directory -Path $destination
 #}
-# Backup the Profile from Document/PowerShell to Terminal before cloneing the terminal to document/PowerShell
-.$backup_script
 
 # Copy all files and directories from the source directory to the destination directory
-Copy-Item -Path $source\* -Destination $destination -Recurse -Force
-Write-Host "All Files Copied"
+Copy-Item -Path $source -Destination $destination
+$check_status = test-path "$destination\Microsoft.PowerShell_profile.ps1"
+if($check_status) {
+    Write-Host "Profile Copied Successfully"
+}
+else {
+    Write-Host "Unable to Copy profile"
+}
+
 
 
 <# 
