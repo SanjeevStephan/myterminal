@@ -1,0 +1,14 @@
+
+PS :/> figlet "TO DO List"
+ _____ ___    ____   ___    _     _     _
+|_   _/ _ \  |  _ \ / _ \  | |   (_)___| |_
+  | || | | | | | | | | | | | |   | / __| __|
+  | || |_| | | |_| | |_| | | |___| \__ \ |_
+  |_| \___/  |____/ \___/  |_____|_|___/\__|
+		by Sanjeev Stephan Murmu
+-------------------------------------------------------------------------
+[] gpg and related operational script
+[] script that list out scripts-name,location-name defined in the profile dictionary
+[] cheatsheet script to store and display various commands for {powershell,bash,ssh,gpg,..}
+[] code-snippets and sample examples {python,powershell}
+[] chatgpt query markdown.md  

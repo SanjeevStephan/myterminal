@@ -54,6 +54,12 @@ function window() {
 # Start the PowerShell ISE process
 Start-Process explorer.exe $pwd
 }
+function TODO(){
+#open a text editor in nano-terminal-editor and save the todo-list
+Start-Process $profile_source\nano.exe $profile_source\TODO
+}
+
+
 function listhash() {
 Get-ChildItem | Select-Object LastWriteTime, Length, Name, @{Name="FileHash";Expression={(Get-FileHash $_.FullName).Hash}}
 }

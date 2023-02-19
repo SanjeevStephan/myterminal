@@ -79,3 +79,23 @@ function nano($filename){
 #Cannot Edit files with format 'sample text.txt' format (it has space)
 Start-Process $profile_source\nano.exe "$filename"
 }
+function paste-temp($filename) {
+#paste the template from template.ps1 to the $filename passed
+Get-Content "$profile_source\template" | Out-File $filename
+}
+function clip($filename){
+#Get Content from clipboard and pass it into the file provided
+Get-Clipboard | Set-Content $filename
+}
+function addtest($filename){
+#Add the prefix "test_" to a given string argument:
+#$file_to_be_renamed = "test_" + "$filename"
+
+$filename = "$filename"
+$filename = $filename.Replace(".\","test_")
+Rename-Item $filename $file_to_be_renamed
+#check_file_exists = $pwd + "$filename"
+#bool = Test-Path check_file_exists
+Write-Host $filename successfully renamed
+
+}
