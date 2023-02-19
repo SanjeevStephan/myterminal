@@ -109,9 +109,17 @@ function paste-temp($filename) {
 #paste the template from template.ps1 to the $filename passed
 Get-Content "$profile_source\template" | Out-File $filename
 }
-function clip($filename){
-#Get Content from clipboard and pass it into the file provided
-Get-Clipboard | Set-Content $filename
+
+function clip($action,$filename){
+  switch($action)
+    {
+        #Get Content from clipboard and pass it into the file provided
+        'in' { Get-Clipboard | Set-Content $filename } 
+        #Get Content from File and pass it into the Clipboard provided
+        'out'{ Get-Content $filename | Set-Clipboard }
+        Default { Write-Host "Invalid Input | Try {Clip in <filename> | clip out <filename>}" }
+    }
+  
 }
 function addtest($filename){
 #Add the prefix "test_" to a given string argument:
