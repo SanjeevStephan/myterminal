@@ -51,7 +51,7 @@ Get-ChildItem -File | ForEach-Object {
 }
 
 # Save the saved hashes hashtable to the JSON file
-$savedHashes | ConvertTo-Json | Set-Content $hashesFile
+# $savedHashes | ConvertTo-Json | Set-Content $hashesFile
 
 # Display the saved hashes in a nice format
 $savedHashes.GetEnumerator() | Sort-Object Name | Format-Table Name, Value -AutoSize
