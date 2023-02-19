@@ -23,6 +23,7 @@ $func_name = @{
     "helpnow"                  = "Display this help menu"
  #   "location"                 = "location of the scripts and directory in profile dictionary"
     "nano <filename>"          = "open files in nano-terminal-editor"
+    "pls"                      = "[pls-cli] default terminal todo script app"
     "run <script_name>"        = "execute script like {pygame|pymath}"
     "refresh"                  = "reload the Microsoft.PowerShell.Profile.ps1 script"
     "TODO"                     = "Open TODO List in Nano Editor"
