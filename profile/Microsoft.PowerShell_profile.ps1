@@ -42,9 +42,11 @@ function refresh() {
     .$profile
 }
 function backup() {
+figlet "backup-ing profile-configs"
+Write-Host "Please Wait"
 # Copy all files & directories from the $HOME/document/powershell directory to the destination directory
 cd $profile_source
-Copy-Item -Path * -Destination $profile_backup_path -Recurse -Force
+Copy-Item -Path * -Destination $profile_backup_path -Recurse -Force -Verbose
 Write-Host "All Files Copied $profile_backup_path"
 cd $profile_backup_path
 dir 
@@ -54,14 +56,6 @@ function window() {
 # Start the PowerShell ISE process
 Start-Process explorer.exe $pwd
 }
-function TODO(){
-#open a text editor in nano-terminal-editor and save the todo-list
-Start-Process $profile_source\nano.exe $profile_source\TODO
-}
 
-
-function listhash() {
-Get-ChildItem | Select-Object LastWriteTime, Length, Name, @{Name="FileHash";Expression={(Get-FileHash $_.FullName).Hash}}
-}
 #-------------------- Script Execution Begins from here-----
 initialize  #calling the initialize() function 
