@@ -36,7 +36,7 @@ function initialize() {
         & python $script["figlet"] --message $initial_title
         
         #call the function helpnow()
-        helpnow 
+        helptab("terminal") 
 }
 function refresh() {
     .$profile
@@ -56,6 +56,7 @@ function window() {
 # Start the PowerShell ISE process
 Start-Process explorer.exe $pwd
 }
+
 
 #-------------------- Script Execution Begins from here-----
 initialize  #calling the initialize() function 

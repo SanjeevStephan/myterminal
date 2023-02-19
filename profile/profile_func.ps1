@@ -2,12 +2,22 @@
 #-------------------- Include Below File ----------------
 #. "$HOME\Documents\PowerShell\profile_include.ps1"
 #-------------------- Functions {Pass-Argument}----------------
-function helpnow(){
-#figlet "Terminal Help "
+
+# Sample Dictionary Formatter 
 #$func_name.GetEnumerator() | Format-Table Name, Value -AutoSize
+# $func_name.GetEnumerator() | Format-Table @{label="Command"; expression={$_.Key}}, @{label="Syntax"; expression={$_.Value}} -AutoSize
 
-$func_name.GetEnumerator() | Format-Table @{label="Command"; expression={$_.Key}}, @{label="Syntax"; expression={$_.Value}} -AutoSize
 
+
+
+function helptab($task_name){
+
+    switch($task_name) {
+        "pls" {.$HOME\Documents\PowerShell\.help\help-pls-cli.ps1}
+        "terminal" {$func_name.GetEnumerator() | Format-Table @{label="Command"; expression={$_.Key}}, @{label="Syntax"; expression={$_.Value}} -AutoSize}
+        Default { Write-Host "Wrong Input | Try -> helptab <task_name>"}
+
+    }
 }
 function figlet($text_to_display){
     & python $script["figlet"] --message $text_to_display
