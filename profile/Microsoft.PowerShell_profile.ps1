@@ -35,11 +35,20 @@ function initialize() {
         #Display Cool Figlet Welcome Text 
         & python $script["figlet"] --message $initial_title
         
-        #call the function helpnow()
+        #call the function helptab()
         helptab("terminal") 
+        #load the todo-lis from 'pls-cli' pymodule
+        pls
+
 }
 function refresh() {
+     figlet "Refreshing"
+     cls
     .$profile
+}
+function alias() {
+    figlet "Get-Alias"
+    Get-Alias
 }
 function backup() {
 figlet "backup-ing profile-configs"

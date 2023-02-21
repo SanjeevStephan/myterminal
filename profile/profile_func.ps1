@@ -51,6 +51,13 @@ function goto($dir_name) {
             {
                  figlet("pymath")
                  cd $paths[$dir_name]
+                 dir *.bat             # Display only bat files
+            }
+            "project"
+            {
+                figlet("Project")
+                cd $paths["project"]
+                dir
             }
             Default 
             {
@@ -115,9 +122,20 @@ function nano($filename){
 #Cannot Edit files with format 'sample text.txt' format (it has space)
 Start-Process $profile_source\nano.exe "$filename"
 }
-function paste-temp($filename) {
-#paste the template from template.ps1 to the $filename passed
-Get-Content "$profile_source\template" | Out-File $filename
+function paste-temp($script_extension,$filename) {
+
+    #paste the template from template4.{py|ps1} to the $filename passed as a argument
+    switch($script_extension)
+    {
+        "py"     {Get-Content "$profile_source\.template\template4py" | Out-File $filename}
+        "-ps1"   {Get-Content "$profile_source\.template\template4ps1" | Out-File $filename}
+        "cmdlet" {Get-Content "$profile_source\.template\tempalte4cmdlet" | Out-File $filename}
+        "gpt4py" {Get-Content "$profile_source\.template\gpt-template4py" | Out-File $filename}
+        "gpt4ps" {Get-Content "$profile_source\.template\gpt-template4ps1" | Out-File $filename}
+         Default {cat $manual_url["func-paste-temp"] }
+
+    }
+
 }
 
 function clip($action,$filename){

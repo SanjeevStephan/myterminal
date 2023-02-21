@@ -4,6 +4,8 @@ $paths  = @{
          "terminal_profile"= "D:\terminal\profile"
          "pyscript"        = "D:\pyscripts"
          "pymath"          = "D:\pyscripts\pymath"
+         "project"         = "D:\terminal\project"
+         "manual"          = "$HOME\Documents\PowerShell\.template"
           
           }
 $script = @{
@@ -14,6 +16,7 @@ $script = @{
     
            }
 $func_name = @{
+    "alias"                    = "made up short-nickname used in-place of the actual command"
     "backup"                   = "backup directory $HOME/Documents/PowerShell"
     "clip <filename|fileurl>"  = "paste the clipboard into the file"
     "edit <filename>"          = "edit files in powershell_ise"
