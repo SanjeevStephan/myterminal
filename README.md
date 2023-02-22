@@ -8,4 +8,4 @@
  * <a href="shoot/developer/visualstudio/cpp/libraries/c-runtime-packages-desktop-bridge#how-to-install-and-update-desktop-framework-packages">C++ Runtime framework packages for Desktop<a/> | (if you encounter any error try insalling this pkg | not tested-yet)
  
  # terminal's utility tools
- * <a href="https://github.com/guedesfelipe/pls-cli">pls-cli</a> (minimalist and full configurable greetings and TODO list)
+ * <a href="https://github.com/guedesfelipe/pls-cli">pls-cli</a> | <a href="https://guedesfelipe.github.io/pls-cli/"> Website</a> (minimalist and full configurable greetings and TODO list)
