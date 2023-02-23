@@ -14,7 +14,7 @@ function helptab($task_name){
 
     switch($task_name) {
         "pls" {.$HOME\Documents\PowerShell\.help\help-pls-cli.ps1}
-        "terminal" {$func_name.GetEnumerator() | Format-Table @{label="Command"; expression={$_.Key}}, @{label="Syntax"; expression={$_.Value}} -AutoSize}
+        "terminal" {$func_name.GetEnumerator() | Sort-Object | Format-Table @{label="Command"; expression={$_.Key}}, @{label="Syntax"; expression={$_.Value}} -AutoSize}
         Default { Write-Host "Wrong Input | Try -> helptab <task_name>"}
 
     }
@@ -28,6 +28,12 @@ function goto($dir_name) {
 # example:- goto py 
         switch ($dir_name) 
         {
+            "codes"
+            {
+                figlet("{code} Snippet")
+                cd $goto_paths["codes"]
+                dir
+            }
             "pshell"
             {
                 figlet("PowerShell")
@@ -65,7 +71,7 @@ function goto($dir_name) {
                 Write-Host "[Invalid] You entered the directory[$dir_name] that is not on the profile dictionary"
                 figlet 'goto'
                 Write-Host "[Try] 'goto <directory-name> | with 'directory name from below' list"
-                $paths.GetEnumerator() | Format-Table @{label="Directory Name"; expression={$_.Key}}, @{label="Path"; expression={$_.Value}} -AutoSize
+                $goto_paths.GetEnumerator() | Format-Table @{label="Directory Name"; expression={$_.Key}}, @{label="Path"; expression={$_.Value}} -AutoSize
 
             }
         }
@@ -100,7 +106,7 @@ function run($script_name_n_url) {
 function launch($app_name){
 
     switch($app_name) {
-            "notepad" { Start-Process "notepad.exe"}
+            "npad" { Start-Process "notepad.exe"}
             "snap"    { Start-Process "SnippingTool.exe"}
             Default   { Start-Process $app_name}
 
@@ -137,6 +143,42 @@ function paste-temp($script_extension,$filename) {
     }
 
 }
+
+function getfilename($script_extension) {
+#changes the 'extensions' along with the file-naming convention a/c to script-file-type
+$string_with_spaces = Get-Clipboard
+
+    switch($script_extension)
+    {
+        "py" 
+        { 
+            # for python-files replace space( ) with (_)
+            $new_string = $string_with_spaces -replace " ", "_"
+             #$jointedString = $new_string -join ".py" <- this line didnot worked
+             $jointedString = "$new_string.py" 
+             $jointedString | Set-Clipboard # send 'new_string_file_name.py' to clipboard
+
+            }
+        "ps" 
+        { 
+             # for powershell-files replace space( ) with (-)
+            $new_string = $string_with_spaces -replace " ", "-"
+            # $jointedString = $new_string -join ".ps1"   <- this line didnot worked
+            $jointedString = "$new_string.ps1"
+            $jointedString | Set-Clipboard # send 'new-string-file-name.ps1' to clipboard
+            }
+        "txt"{ Set-Clipboard = $new_string -join ".txt" }
+        Default {Write-Output "Wrong Parameter | Try -> {py,ps,txt}" }
+
+    }
+
+
+#Write-Output "Sent to Clipboard : $string_with_spaces" 
+#Write-Output "After Replace : $new_string"  
+
+    
+}
+
 
 function clip($action,$filename){
   switch($action)

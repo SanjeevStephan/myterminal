@@ -6,8 +6,13 @@ PS :/> figlet "TO DO List"
   |_| \___/  |____/ \___/  |_____|_|___/\__|
 		by Sanjeev Stephan Murmu
 -------------------------------------------------------------------------
-[] gpg and related operational script
-[] script that list out scripts-name,location-name defined in the profile dictionary
-[] cheatsheet script to store and display various commands for {powershell,bash,ssh,gpg,..}
-[] code-snippets and sample examples {python,powershell}
-[] chatgpt query markdown.md  
+[ ] gpg and related operational script
+[ ] script that list out scripts-name,location-name defined in the profile dictionary
+[ ] cheatsheet script to store and display various commands for {powershell,bash,ssh,gpg,..}
+[*] code-snippets and sample examples {python,powershell} in the terminal directory> try (goto codes)
+[*] chatgpt query and response template codes> use { paste-temp gpt4py or gpt4ps1 <filename.{py or ps1}
+[ ] save the all the pythons's score data in the pymath(directory) into single json file(saved_score.json)
+[ ] python script to play morning motivation of andrew-tete from profile terminal> using keyword(motivateme)
+[ ] automate 1st installation process in window using powershell as ur primary script keyword(automate) under terminal
+[ ] create a formated-table of gui tool like snippingtool.exe with keywords like (snap) | filename with(*.exe)
+[ ] save config file (.config) under $HOME/.config/pls to backup dir terminal under .config wth different filename  

@@ -46,6 +46,16 @@ function refresh() {
      cls
     .$profile
 }
+function rf() {
+     figlet "Refreshing"
+     cls
+    .$profile
+}
+function lst() {
+# Display only the files names
+figlet "List File-names"
+Get-ChildItem | Select-Object Name
+}
 function alias() {
     figlet "Get-Alias"
     Get-Alias
