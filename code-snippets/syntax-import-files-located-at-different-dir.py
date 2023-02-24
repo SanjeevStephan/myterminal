@@ -28,7 +28,7 @@ Here is an example code snippet:
 
 import sys
 sys.path.append("D:\\terminal\\py")
-import py
+#import py
 
 
  

@@ -4,15 +4,15 @@
         "score": ""
     },
     "substraction": {
-        "date": "23 February 2023",
-        "score": "You got 2 out of 3 questions correct!"
+        "date": "today",
+        "score": "509"
     },
     "division": {
-        "desc": "tooday",
-        "syntax": "996"
-    },
-    "multiplication": {
         "date": "",
         "score": ""
+    },
+    "multiplication": {
+        "date": "yeaster-day",
+        "score": "403"
     }
 }
