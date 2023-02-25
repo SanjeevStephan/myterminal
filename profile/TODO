@@ -16,4 +16,8 @@ PS :/> figlet "TO DO List"
 [ ] automate 1st installation process in window using powershell as ur primary script keyword(automate) under terminal
 [ ] create a formated-table of gui tool like snippingtool.exe with keywords like (snap) | filename with(*.exe)
 [ ] save config file (.config) under $HOME/.config/pls to backup dir terminal under .config wth different filename  
-[ ] create a new repo 'upsc' -> contains a collection os json dictionaries and exercises to assist me in the preparation
+[*] create a new repo 'study' -> contains a collection os json dictionaries and exercises to assist me in the preparation
+[ ] create a script to display the important KEYBOARD_SHORTCUTS and what does it do! -> add alias "shortkey it the main login page
+[ ] learn to use the exising codes -> import files and call & reuse functions {arguments,parameter} | don't replicate
+[ ] rewrite this todo-list using pretty table and json similar to -> study | add_vocabulary script
+[ ] script to list all the repository directory name and its location 
