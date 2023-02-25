@@ -1,85 +1,67 @@
-""" 
-.SYNOPSIS
+"""  ---------------------{ CHATGPT QUERY }------------------------------
+
+.QUERY
+
     
-    display it in a formatted table using the prettytable module in Python
+.RESPONSE
+
+
+.SYNTAX
+   
 
 .DESCRIPTION
-    
-    This Python script . 
-    
-.PARAMETER
+ 
+
+.NOTE
 
     
+.PARAMETER   
 
-.EXAMPLE
+
+.INPUT
+
     
+.CODE    
+Here is an example code snippet:
+-------------------------------{ CODE_BELOW }-----------------------------"""
+import pass_message_to_func_show_figlet as figlet
+from prettytable import PrettyTable
+
+figlet.show_figlet("PrettyTable")
+
+def simple_pretty_table_func():
+
+    my_dict = {"apple": 2, "banana": 3, "orange": 1}
+
     
-     
-.AUTHOR
+    print(my_dict)
+    print("[Before] Using Pretty Table (raw-dictionary-data)")
+
+    # create a new table
+    table = PrettyTable()
+
+    # add columns to the table
+    table.add_column("Fruit", list(my_dict.keys()))
+    table.add_column("Quantity", list(my_dict.values()))
+
+    # print the table
     
-    -Sanjeev Stephan Murmu
+    print(table)
+    print("[After] Using Pretty Table (sorted-dictionary-data)")
+
+simple_pretty_table_func()
+
+
+ 
+"""-------------------------------{ CODE_ABOVE }-----------------------------
+
+.OUTPUT 
+
+
+.HOW_THE_SCRIPT_WORK
+
 
 .LINK
-
-.NOTES
-   Note that in the code above, the field_names argument is used to specify the column headers for the table.
-     The capitalize() method is used to capitalize the first letter of each operation name.
-     You can update the data in the dictionary as needed to display the actual dates and scores. 
-
-.
--------------------------------|| CODE_BELOW ||-----------------------------
-"""
-
-import prettytable
-
-# create the dictionary
-data = {
-    "addition": {
-        "date": "",
-        "score": ""
-    },
-    "substraction": {
-        "date": "",
-        "score": ""
-    },
-    "division": {
-        "date": "",
-        "score": ""
-    },
-    "multiplication": {
-        "date": "",
-        "score": ""
-    }
-}
-
-# create the table and add the data
-table = prettytable.PrettyTable()
-table.field_names = ["Operation", "Date", "Score"]
-for operation, values in data.items():
-    table.add_row([operation.capitalize(), values["date"], values["score"]])
-
-# display the table
-print(table)
-
-
-"""
--------------------------------|| CODE_ABOVE ||-----------------------------
-------------------------------|| TERMINAL LOG ||----------------------------
-This will output the following table:
-+----------------+------+-------+
-|    Operation   | Date | Score |
-+----------------+------+-------+
-|    Addition    |      |       |
-|  Substraction  |      |       |
-|    Division    |      |       |
-| Multiplication |      |       |
-+----------------+------+-------+
-
-
-
--------------------------------|| HOW THE SCRIPT WORK ||--------------------
-
-
-
+   -> https://chat.openai.com/chat/
 
 """
