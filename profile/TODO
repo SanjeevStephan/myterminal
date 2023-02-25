@@ -16,3 +16,4 @@ PS :/> figlet "TO DO List"
 [ ] automate 1st installation process in window using powershell as ur primary script keyword(automate) under terminal
 [ ] create a formated-table of gui tool like snippingtool.exe with keywords like (snap) | filename with(*.exe)
 [ ] save config file (.config) under $HOME/.config/pls to backup dir terminal under .config wth different filename  
+[ ] create a new repo 'upsc' -> contains a collection os json dictionaries and exercises to assist me in the preparation

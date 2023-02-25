@@ -134,7 +134,7 @@ function paste-temp($script_extension,$filename) {
     switch($script_extension)
     {
         "py"     {Get-Content "$profile_source\.template\template4py" | Out-File $filename}
-        "-ps1"   {Get-Content "$profile_source\.template\template4ps1" | Out-File $filename}
+        "ps1"   {Get-Content "$profile_source\.template\template4ps1" | Out-File $filename}
         "cmdlet" {Get-Content "$profile_source\.template\tempalte4cmdlet" | Out-File $filename}
         "gpt4py" {Get-Content "$profile_source\.template\gpt-template4py" | Out-File $filename}
         "gpt4ps" {Get-Content "$profile_source\.template\gpt-template4ps1" | Out-File $filename}
