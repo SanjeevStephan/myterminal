@@ -5,3 +5,4 @@
 .terminal-log
 .ignored-pdf-docs
 .test_directory
+*.mp3
