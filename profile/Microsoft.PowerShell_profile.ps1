@@ -39,17 +39,15 @@ function initialize() {
         helptab("terminal") 
         #load the todo-lis from 'pls-cli' pymodule
         pls
+        .$script["quotesoftheday"] # display quotes of the day
+        cd $paths["terminal"]
 
 }
 function refresh() {
      figlet "Refreshing"
      cls
     .$profile
-}
-function rf() {
-     figlet "Refreshing"
-     cls
-    .$profile
+     cd $paths["terminal"]
 }
 function lst() {
 # Display only the files names
