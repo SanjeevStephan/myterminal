@@ -6,6 +6,7 @@ $paths  = @{
          "pymath"          = "D:\pyscripts\pymath"
          "project"         = "D:\terminal\project"
          "manual"          = "$HOME\Documents\PowerShell\.template"
+
          }
 
 $goto_paths  = @{
@@ -25,5 +26,6 @@ $script = @{
             "pymath" = "D:\pyscripts\pymath\pymath.py"
             "pygame" = "D:\pyscripts\pygame\pygame.py"
             "google_query" = "D:\terminal\taskarray\send-google-query.ps1"
+            "quotesoftheday"="D:\\terminal\\quotes-of-the-day.ps1"
     
            }
