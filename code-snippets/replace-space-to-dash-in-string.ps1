@@ -41,11 +41,11 @@ print(new_string)
 
 
 .HOW_THE_SCRIPT_WORK
-    This code defines a function replace_spaces_with_dashes that takes a string as an argument. Inside the function, we use the replace method of the string object to replace all occurrences of a space (" ") with a dash ("-"). The modified string is then returned from the function.
+    This code defines a function replace_spaces_with_dashes that takes a string as an argument. Inside the function, we use the replace method of the string object to replace all occurrences of a space (' ') with a dash ('-'). The modified string is then returned from the function.
 
     An example string my_string is defined, and the function replace_spaces_with_dashes is called with my_string as an argument. The resulting modified string is stored in the variable new_string, and then printed to the console.
 
-    This code will print "This-is-a-sample-string-with-spaces", which is the original string with all spaces replaced by dashes.
+    This code will print This-is-a-sample-string-with-spaces, which is the original string with all spaces replaced by dashes.
 
 .LINK
    -> https://chat.openai.com/chat/

@@ -24,7 +24,7 @@
 .CODE    
 Here is an example code snippet:
 -------------------------------{ CODE_BELOW }-----------------------------"""
-import pass_message_to_func_show_figlet as figlet
+import function_show_figlet_message as figlet
 from prettytable import PrettyTable
 
 figlet.show_figlet("PrettyTable")

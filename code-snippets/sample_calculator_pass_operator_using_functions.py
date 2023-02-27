@@ -5,7 +5,6 @@
 
 .DESCRIPTION
     
-    
     You can pass operators using functions in Python by passing them as arguments to the function.
     
 .PARAMETER
@@ -27,13 +26,11 @@ Note that in this example, we only included the four basic arithmetic operators 
     
 
 .
--------------------------------|| CODE_BELOW ||-----------------------------
-"""
-import os 
-import pass_message_to_func_show_figlet as figlet
+-------------------------------|| CODE_BELOW ||-----------------------------"""
 
-figlet.show_figlet("Pass Operator")
+import function_show_figlet_message as figlet
 
+figlet.show_figlet("Simple Calculator")
 
 def apply_operator(num1, num2, operator):
     if operator == "+":
@@ -48,15 +45,16 @@ def apply_operator(num1, num2, operator):
         print("Invalid operator")
         return None
 
-num1 = input("Enter 1st Number :-> ")
-num2 = input("Enter 2nd Number :-> ")
-operator = input("Enter any operator (+,-,*,/) :-> ")
-result = apply_operator(num1, num2, operator)
-print(f"{num1} {operator} {num2} = {result}")
+while (True) :
+    num1 = int(input("[INPUT] Enter 1st Number :-> "))
+    num2 = int(input("[INPUT] Enter 2nd Number :-> "))
+    operator = str(input("[INPUT] Enter any operator (+,-,*,/) name (add,substract,multiply,divide):-> "))
+    result = apply_operator(num1, num2, operator)
+    print(f"[OUTPUT] {num1} {operator} {num2} = {result}")
 
 
-"""
--------------------------------|| CODE_ABOVE ||-----------------------------
+
+"""-------------------------------|| CODE_ABOVE ||-----------------------------
 ------------------------------|| TERMINAL LOG ||----------------------------
 
 PS D:\terminal> python

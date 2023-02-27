@@ -26,7 +26,7 @@ Here is an example code snippet:
 -------------------------------{ CODE_BELOW }-----------------------------"""
 import os
 import pyperclip
-os.system('python D:\\terminal\\py\\figlet.py --message "Convert to *.py"')
+os.system('python D:\\terminal\\py\\figlet.py --message "py to clipboard"')
 
 def replace_spaces_with_dashes(input_string):
     return input_string.replace(" ", "-")

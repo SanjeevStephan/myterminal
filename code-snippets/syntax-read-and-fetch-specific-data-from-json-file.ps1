@@ -24,7 +24,8 @@
 .CODE    
 Here's an example PS1 script that reads a JSON file:
 -------------------------------{ CODE_BELOW }-----------------------------#>
-
+#figlet "Read Json Data"
+./figlet-pass.bat "Read Json Data"
 
 # Load the JSON file as a string
 $json = Get-Content -Raw -Path "testfile.json"
