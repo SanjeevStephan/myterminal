@@ -162,7 +162,8 @@ function checkArgument(){
 
 function initialize{
 # Function put inside this block will be executed
-./show-figlet.ps1 "Today's Quotes"
+#./show-figlet.ps1 "Today's Quotes"
+./figlet-pass.bat "Today's Quotes"
 #./show-figlet.ps1 
 
 checkArgument
