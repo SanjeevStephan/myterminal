@@ -1,1 +1,2 @@
-python D:\terminal\py\figlet.py --message %1
+@echo off
+python figlet.py --message %1
