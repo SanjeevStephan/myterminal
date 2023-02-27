@@ -48,7 +48,7 @@ def apply_operator(num1, num2, operator):
 while (True) :
     num1 = int(input("[INPUT] Enter 1st Number :-> "))
     num2 = int(input("[INPUT] Enter 2nd Number :-> "))
-    operator = str(input("[INPUT] Enter any operator (+,-,*,/) name (add,substract,multiply,divide):-> "))
+    operator = str(input("[INPUT] Enter any operator (+,-,*,/) :-> "))
     result = apply_operator(num1, num2, operator)
     print(f"[OUTPUT] {num1} {operator} {num2} = {result}")
 
@@ -57,8 +57,8 @@ while (True) :
 """-------------------------------|| CODE_ABOVE ||-----------------------------
 ------------------------------|| TERMINAL LOG ||----------------------------
 
-PS D:\terminal> python
-
+PS D:\terminal> python 
+(add,substract,multiply,divide)
 
 -------------------------------|| HOW THE SCRIPT WORK ||--------------------
 
