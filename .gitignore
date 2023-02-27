@@ -6,3 +6,4 @@
 .ignored-pdf-docs
 .test_directory
 *.mp3
+.chatgpt_responses
