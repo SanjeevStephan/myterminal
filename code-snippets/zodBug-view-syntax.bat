@@ -12,14 +12,17 @@ for %%i in (*.*) do (
         set "file[!count!]=!filename!"
     )
 )
+REM Get Current Working Directory
+cd /d %~dp0
+echo Current working directory: %cd%
 
-if %count%==0 (
-    echo No files found.
-) else (
-    set /p choice=Enter file number to open: 
-    set "selected_file=!file[%choice%]!"
-    REM %selected_file%
-    notepad.exe -File %selected_file% 	
-    REM powershell_ise.exe -File "!selected_file!"
-)
+rem Prompt user to select a file by index number
+set /p index="Enter the index number of the file you want to select: "
 
+rem Copy selected file to clipboard
+set "selected_file=!file[%index%]!"
+set "file_path=%cd%\!selected_file!"
+echo Filename !selected_file! have been sent to clipout.py
+echo file path is %file_path%
+
+notepad %file_path%
