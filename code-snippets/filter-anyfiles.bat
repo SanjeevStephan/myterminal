@@ -18,18 +18,37 @@ setlocal enabledelayedexpansion
 
 python line.py --range 75
 
-for %%i in (*.%1) do (
+@echo off
+setlocal enabledelayedexpansion
+
+set "ext=%1"
+set "match=%2"
+set "count=0"
+
+rem Get list of files with specified extension
+for %%i in (*.%ext%) do (
     set "filename=%%i"
-    if "!filename!"=="!filename:%2=!" (
-        rem do nothing
+    if "!filename!"=="!filename:%match%=!" (
+        rem File doesn't contain match string
     ) else (
         set /a count+=1
-	echo [!count!] !filename!
-        REM echo !count!. !filename!
-	
+        echo [!count!] !filename!
         set "file[!count!]=!filename!"
     )
 )
+
+rem Prompt user to select a file by index number
+set /p index="Enter the index number of the file you want to select: "
+
+rem Copy selected file to clipboard
+set "selected_file=!file[%index%]!"
+REM type "!selected_file!" | clip
+
+
+
+echo Filename !selected_file! have been sent to clipout.py 
+
+python clipout.py --text !selected_file!
 
 python log.py --text " Total Files Found with name [%2]=> !count! "
 
