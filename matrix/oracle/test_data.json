@@ -1,0 +1,33 @@
+{
+
+    "misogynist": {
+        "word": "misogynist",
+        "meaning": "hate-marriage",
+        "session": "1"
+    },
+    "extrovert": {
+        "word": "extrovert",
+        "meaning": "enjoys being around people",
+        "session": "1"
+    },
+    "ascetic": {
+        "word": "ascetic",
+        "meaning": "does not pursue pleasures of the flesh",
+        "session": "1"
+    },
+    "egocentric": {
+        "word": "egocentric",
+        "meaning": " an extreme form of egoist (intolerable)",
+        "session": "2"
+    },
+    "egomaniac": {
+        "word": "egomaniac",
+        "meaning": "a maniac driven by his egoism.",
+        "session": "2"
+    },
+    "ego": {
+        "word": "ego",
+        "meaning": "latin word for 'i' is ego",
+        "session": "2"
+    }
+}
