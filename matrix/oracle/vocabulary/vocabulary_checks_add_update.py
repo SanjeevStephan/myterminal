@@ -16,30 +16,32 @@ Here is an example code snippet:
 
 
 import json
-import vocabulary_config
-from additonal_files import snippet_comment as debug
-from additonal_files import snippet_getFullTable as callTableFunctions
+import vocabulary_config as config
+#from additonal_files import snippet_comment as callTableFunctions
+import vocabulary_getTable as callTableFunctions
 
-filename = vocabulary_config.filename
-figlet_display_text = vocabulary_config.update_table_title
-read_full_table_column_header_1 = vocabulary_config.read_full_table_column_header_1
-read_full_table_column_header_2 = vocabulary_config.read_full_table_column_header_2
-read_full_table_column_header_3 = vocabulary_config.read_full_table_column_header_3
+callTableFunctions.clearScreen()
 
-read_full_table_add_row_value_1st = vocabulary_config.read_full_table_add_row_value_1st
-read_full_table_add_row_value_2nd = vocabulary_config.read_full_table_add_row_value_2nd 
-read_full_table_add_row_value_3rd = vocabulary_config.read_full_table_add_row_value_3rd
+filename = config.filename
+figlet_display_text = config.update_table_title
+read_full_table_column_header_1 = config.read_full_table_column_header_1
+read_full_table_column_header_2 = config.read_full_table_column_header_2
+read_full_table_column_header_3 = config.read_full_table_column_header_3
 
-read_full_table_sort_by = vocabulary_config.read_full_table_sort_by
+read_full_table_add_row_value_1st = config.read_full_table_add_row_value_1st
+read_full_table_add_row_value_2nd = config.read_full_table_add_row_value_2nd 
+read_full_table_add_row_value_3rd = config.read_full_table_add_row_value_3rd
 
-debug.showComment("File Loaded",filename)
+read_full_table_sort_by = config.read_full_table_sort_by
+
+callTableFunctions.showComment("File Loaded",filename)
 callTableFunctions.showFiglet(figlet_display_text)  # Display 'Add Vocabulary' figlet ascii text
-#debug.showComment("Calling Fuction","showInstructions() from 'snippet_getFullTable.py'")
+#callTableFunctions.showComment("Calling Fuction","showInstructions() from 'snippet_getFullTable.py'")
 callTableFunctions.showInstructions()                     # Show instruction for adding and updating json data
-#debug.showComment("Calling Fuction","full_table() from 'snippet_getFullTable.py'")
+#callTableFunctions.showComment("Calling Fuction","full_table() from 'snippet_getFullTable.py'")
 callTableFunctions.full_table()                           # Display The Json Dictionary Data as table once before making any changes to it
 
-# debug.showComment("Loop","While Loop Started'")
+# callTableFunctions.showComment("Loop","While Loop Started'")
 while True:
     
     # Ask the user for module information
@@ -68,7 +70,7 @@ while True:
     jason_child_item_3 = input("Enter the {} : ".format(read_full_table_add_row_value_3rd))
 
     # Update the data with the new information
-    debug.showComment("JSON","Writing to file : {}'".format(filename))
+    callTableFunctions.showComment("JSON","Writing to file : {}'".format(filename))
     data[jason_child_item_1.lower()] = {
         read_full_table_add_row_value_1st   : jason_child_item_1.lower(),
         read_full_table_add_row_value_2nd   : jason_child_item_2.lower(),
@@ -83,7 +85,7 @@ while True:
     print(f"'{jason_child_item_1}' saved to '{filename}'")
 
     # display a single updated row
-    # debug.showComment("Variable","Pasing '{}' to single_row() -> snippet_getFullTable.py".format(jason_child_item_1.lower()))
+    # callTableFunctions.showComment("Variable","Pasing '{}' to single_row() -> snippet_getFullTable.py".format(jason_child_item_1.lower()))
     #print("[Sending] {} to func() single_row".format(jason_child_item_1.lower()))
     callTableFunctions.single_row(jason_child_item_1.lower())
 

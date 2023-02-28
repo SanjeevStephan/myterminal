@@ -46,6 +46,9 @@ def showFiglet(message):
 def showComment(type="Comment",message="No Message Passed"):
     print("[{}] {}".format(type,message))
 
+def clearScreen():
+    os.system("cls")
+
 # Show Script add-update information
 def showInstructions():
     instruction = {

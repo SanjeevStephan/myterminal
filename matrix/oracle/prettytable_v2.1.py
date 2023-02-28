@@ -29,7 +29,7 @@
 .
 -------------------------------|| CODE_BELOW ||-----------------------------
 """
-import saved_config
+import saved_config_ver_2_1 as saved_config
 import json
 import prettytable
 from additonal_files import snippet_getFullTable as callTableFunctions
