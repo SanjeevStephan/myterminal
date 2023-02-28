@@ -7,3 +7,5 @@
 .test_directory
 *.mp3
 .chatgpt_responses
+code-snippets/format-verb-filename
+code-snippets/format-launch-extension-noun
