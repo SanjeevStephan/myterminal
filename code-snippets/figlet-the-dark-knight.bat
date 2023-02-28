@@ -1,2 +1,3 @@
 @echo off
-python figlet.py --message "The Dark Knight"
+
+python trinity\figlet.py --message "The Dark Knight"
