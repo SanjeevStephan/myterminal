@@ -12,3 +12,4 @@ code-snippets/format-launch-extension-noun
 matrix/oracle/__pycache__/config.cpython-311.pyc
 matrix/neo/__pycache__/log.cpython-311.pyc
 *.pyc
+.ignored_test_json_files
