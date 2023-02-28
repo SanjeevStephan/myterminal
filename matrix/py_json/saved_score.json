@@ -1,0 +1,18 @@
+{
+    "addition": {
+        "date": " ",
+        "score": ""
+    },
+    "substraction": {
+        "date": "today",
+        "score": "509"
+    },
+    "division": {
+        "date": "",
+        "score": ""
+    },
+    "multiplication": {
+        "date": "yeaster-day",
+        "score": "403"
+    }
+}

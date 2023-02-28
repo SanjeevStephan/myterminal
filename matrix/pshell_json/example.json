@@ -1,0 +1,18 @@
+{
+  "date_created": "20 Feb 2023",
+  "email": "johndoe@example.com",
+  "vocabulary": [
+    {
+        "word": "aberration",
+        "definition": "a departure from what is normal, usual, or expected, typically one that is unwelcome"
+    },
+    {
+        "word": "cacophony",
+        "definition": "a harsh, discordant mixture of sounds"
+    },
+    {
+        "word": "ephemeral",
+        "definition": "lasting for a very short time"
+    }
+]
+}
