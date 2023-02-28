@@ -1,22 +1,97 @@
 {
     "egoist": {
-        "word" : "egoist",
-        "meaning": "selfish desire for self-advance ",
+        "word": "egoist",
+        "meaning": "one's concept of oneself",
         "session": "1"
     },
     "egotist": {
-        "word" : "egotist",
-        "meaning": "boastful to the point of being obnoxious",
-        "session": "1"
+        "word": "egotist",
+        "meaning": "a person who talks excessively about them-self",
+        "session": "2"
     },
     "altruist": {
-        "word" : "altruist",
-        "meaning": "concerning yourself with the walfare of others",
-        "session": "1"
+        "word": "altruist",
+        "meaning": "people with strong desire to help other",
+        "session": "2"
     },
     "introvert": {
-        "word" : "introvert",
+        "word": "introvert",
         "meaning": "shy or quite person who enjoys being alone",
         "session": "1"
+    },
+    "ambivert": {
+        "word": "ambivert",
+        "meaning": "have both introvert and extrovert tendencies",
+        "session": "1"
+    },
+    "misanthrope": {
+        "word": "misanthrope",
+        "meaning": "anti-feminist",
+        "session": "1"
+    },
+    "misogynist": {
+        "word": "misogynist",
+        "meaning": "hate-marriage",
+        "session": "1"
+    },
+    "extrovert": {
+        "word": "extrovert",
+        "meaning": "enjoys being around people",
+        "session": "1"
+    },
+    "ascetic": {
+        "word": "ascetic",
+        "meaning": "does not pursue pleasures of the flesh",
+        "session": "1"
+    },
+    "egocentric": {
+        "word": "egocentric",
+        "meaning": " an extreme form of egoist (intolerable)",
+        "session": "2"
+    },
+    "egomaniac": {
+        "word": "egomaniac",
+        "meaning": "a maniac driven by his egoism.",
+        "session": "2"
+    },
+    "ego": {
+        "word": "ego",
+        "meaning": "latin word for 'i' is ego",
+        "session": "2"
+    },
+    "alter": {
+        "word": "alter",
+        "meaning": "in latin, the word for other is alter",
+        "session": "2"
+    },
+    "altruism": {
+        "word": "altruism",
+        "meaning": "principle|moral practice of concern for welfare",
+        "session": "2"
+    },
+    "to-alternate": {
+        "word": "to-alternate",
+        "meaning": "you skip one and took the other",
+        "session": "2"
+    },
+    "to-alter": {
+        "word": "to-alter",
+        "meaning": "to change",
+        "session": "2"
+    },
+    "alternative": {
+        "word": "alternative",
+        "meaning": "a choice",
+        "session": "2"
+    },
+    "alteration": {
+        "word": "alteration",
+        "meaning": "a change",
+        "session": "2"
+    },
+    "altercation": {
+        "word": "altercation",
+        "meaning": "a verbal and violent disput|disagreement",
+        "session": "2"
     }
 }
