@@ -1,5 +1,5 @@
 @echo off
-python figlet.py --message "Syntax"
+python neo\figlet.py --message "Syntax"
 setlocal enabledelayedexpansion
 
 for %%i in (*.*) do (

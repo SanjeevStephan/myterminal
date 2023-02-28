@@ -1,14 +1,14 @@
 @echo off
 REM Send Logs to the Python File -> log.py
 
-python figlet.py --message "Filter Anyfiles Version 2.0"
-python log.py --text " Released Date => 28 Feb 2023"
-python log.py --text " Instructions => Follow the syntax below to filter anyfiles"
-python log.py --text " %%1 => Pass file.extensions such as (bat,py,ps1,json) and so on."
-python log.py --text " %%2 => Pass string to filter the filenames with "
-python log.py --text " anyfiles.* => pass '*' as the first agrument %%1  "
-python log.py --text " syntax => .\filter-files.bat %%1 %%2 "
-python log.py --text " example => .\filter-files.bat %1 %2 "
+python neo\figlet.py --message "Filter Anyfiles Version 2.0"
+python neo\log.py --text " Released Date => 28 Feb 2023"
+python neo\log.py --text " Instructions => Follow the syntax below to filter anyfiles"
+python neo\log.py --text " %%1 => Pass file.extensions such as (bat,py,ps1,json) and so on."
+python neo\log.py --text " %%2 => Pass string to filter the filenames with "
+python neo\log.py --text " anyfiles.* => pass '*' as the first agrument %%1  "
+python neo\log.py --text " syntax => .\filter-files.bat %%1 %%2 "
+python neo\log.py --text " example => .\filter-files.bat %1 %2 "
 
 python line.py --range 75
 
@@ -19,14 +19,14 @@ if "%1"=="" (
     exit /b
 )
 
-python figlet.py --message "Filtering %2"
-python log.py --text " file-extension => %1 "
-python log.py --text " filter-text=> %2 "
-python log.py --text "Filtering filenames with text [%2] and extension [.%1]"
+python neo\figlet.py --message "Filtering %2"
+python neo\log.py --text " file-extension => %1 "
+python neo\log.py --text " filter-text=> %2 "
+python neo\log.py --text "Filtering filenames with text [%2] and extension [.%1]"
 
 setlocal enabledelayedexpansion
 
-python line.py --range 75
+python neo\line.py --range 75
 
 @echo off
 setlocal enabledelayedexpansion
@@ -58,7 +58,7 @@ REM type "!selected_file!" | clip
 
 echo Filename !selected_file! have been sent to clipout.py 
 
-python clipout.py --text !selected_file!
+python neo\clipout.py --text !selected_file!
 
-python log.py --text " Total Files Found with name [%2]=> !count! "
+python neo\log.py --text " Total Files Found with name [%2]=> !count! "
 
