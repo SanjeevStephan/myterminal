@@ -1,5 +1,5 @@
 @echo off
-python figlet.py --message "Phoenix-ps1"
+python neo\figlet.py --message "Phoenix-ps1"
 setlocal enabledelayedexpansion
 
 for %%i in (*.*) do (
