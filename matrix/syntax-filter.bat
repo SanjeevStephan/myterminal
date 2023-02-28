@@ -2,8 +2,8 @@
 setlocal enabledelayedexpansion
 set scriptname="Syntax Filter"
 
-python figlet.py --message %scriptname%
-python line.py --range 75
+python neo\figlet.py --message %scriptname%
+python neo\line.py --range 75
 
 set extension=%1
 set substring=%2

@@ -1,4 +1,9 @@
 @echo off
-python figlet.py --message "Pass Arguments"
-python log.py --text "1st Argument Received : %1"
-python log.py --text "2nd Argument Received : %2"
+
+set first_argument=%1
+set second_argument=%2
+
+python neo\figlet.py --message "Pass Arguments"
+python neo\log.py --text " Syntax : .\syntax-pass-arguments.bat hello world"
+python neo\log.py --text "1st Argument Received : %first_argument%"
+python neo\log.py --text "2nd Argument Received : %second_argument%"
