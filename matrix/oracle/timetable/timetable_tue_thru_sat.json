@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Tue Thru Fri",
+        "time": "5AM - 6AM",
+        "status": "Done"
+    },
+    {
+        "title": "Cuurrent Affairs",
+        "time": "6AM - 7AM",
+        "status": "pending"
+    },
+    {
+        "title": "General Awareness",
+        "time": "8AM - 9AM",
+        "status": "Done"
+    },
+    {
+        "title": "Static G.K",
+        "time": "10AM - 11AM",
+        "status": "Pending"
+    }
+]

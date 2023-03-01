@@ -1,0 +1,52 @@
+[
+    {
+        "title": "Speed Maths",
+        "time": "5 AM - 6 AM",
+        "status": "Pending"
+    },
+    {
+        "title": "Current Affairs",
+        "time": "6AM - 8 AM",
+        "status": "Pending"
+    },
+    {
+        "title": "Revison Maths",
+        "time": "8 AM - 10 Am",
+        "status": "Pending"
+    },
+    {
+        "title": "Static G.K",
+        "time": "10 AM - 11 AM",
+        "status": "Pending"
+    },
+    {
+        "title": "Quantitative Aptitude",
+        "time": "12 AM - 4 AM",
+        "status": "Pending"
+    },
+    {
+        "title": "Solve Quantitative's Ques",
+        "time": "4 AM - 5 AM",
+        "status": "Pending"
+    },
+    {
+        "title": "Maths",
+        "time": "6PM - 8PM",
+        "status": "Pending"
+    },
+    {
+        "title": "Banking & Financial Awareness",
+        "time": "8PM - 9PM",
+        "status": "Pending"
+    },
+    {
+        "title": "Speed Maths",
+        "time": "9 AM - 10 AM",
+        "status": "Pending"
+    },
+    {
+        "title": "English Comprehension",
+        "time": "10PM - 11PM",
+        "status": "Pending"
+    }
+]
