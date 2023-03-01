@@ -59,6 +59,13 @@ function goto($dir_name) {
                 cd $paths["matrix"]
                 
             }
+            "oracle"
+            {
+                figlet "The Oracle"
+                cd $paths["oracle"]
+                dir
+                
+            }
             "pymath" 
             {
                  figlet("pymath")

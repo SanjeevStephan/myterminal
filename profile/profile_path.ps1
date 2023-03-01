@@ -3,6 +3,7 @@ $paths  = @{
          "terminal"        = "D:\terminal"
          "terminal_profile"= "D:\terminal\profile"
          "matrix"        = "D:\terminal\matrix"
+         "oracle"         = "D:\terminal\matrix\oracle"
          "pyscript"        = "D:\pyscripts"
          "pymath"          = "D:\pyscripts\pymath"
          "project"         = "D:\terminal\project"
@@ -19,6 +20,8 @@ $goto_paths  = @{
          "pymath"          = "D:\pyscripts\pymath"
          "project"         = "D:\terminal\project"
          "manual"          = "$HOME\Documents\PowerShell\.template"
+         "matrix"         = "D:\terminal\matrix"
+         "oracle"         = "D:\terminal\matrix\oracle"
          "codes"           = "D:\terminal\code-snippets"
           
           }
