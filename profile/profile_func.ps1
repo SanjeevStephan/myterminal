@@ -106,6 +106,32 @@ function run($script_name_n_url) {
            Write-Host "PyMath executed Successfully"
            & python  $script[$script_name_n_url]
         }
+        "timetable"
+        {
+            figlet "Time-Table"
+            #cd $paths["timetable"]
+           #.$script["timetable"]
+           Write-Host "Select Below Option to view timetables"
+           #& python  $script[$script_name_n_url]
+           Write-Output "1. Time table for Monday-Wednesday-Friday(MWF)"
+           Write-Output "2. Time table for Tuesday-Thrusday-Saturday(TTS)"
+           $choice = Read-Host "[ENTER] Select Time-Table for (1 OR 2):"
+
+
+           Switch($choice)
+           {
+                "1"{ .$script["timetable_mwf"] } # MWF
+                "2"{ .$script["timetable_tts"] } # TTS
+                Default {Write-Output "invalid option entered"}
+           }
+
+        }
+        "vocabulary"
+        {
+            
+            .$script["vocabulary"] # dot executions bat|cmd scripts
+            Write-Host "vocabulary executed Successfully"
+        }
         Default
         {
             Write-Host "[Invalid] Script Name Not Mentioned in the Dictionary "
@@ -240,3 +266,11 @@ Get-ChildItem | Select-Object Name, @{Name="FileHash";Expression={(Get-FileHash 
 
 # Sample dictionry format-table
 #  $paths.GetEnumerator() | Format-Table @{label="Directory Name"; expression={$_.Key}}, @{label="Path"; expression={$_.Value}} -AutoSize
+
+
+
+function copypath() {
+    $current_directory = Get-Location
+    $current_directory | Set-Clipboard
+    Write-Output "[Copied] Directory Path: $($current_directory.Path)"
+}
