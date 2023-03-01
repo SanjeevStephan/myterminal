@@ -53,6 +53,12 @@ function goto($dir_name) {
                 cd $paths[$dir_name]
                 dir
             }
+            "matrix"
+            {
+                figlet "The Matrix"
+                cd $paths["matrix"]
+                
+            }
             "pymath" 
             {
                  figlet("pymath")
@@ -223,6 +229,7 @@ function listhash() {
 #Get-ChildItem | Select-Object LastWriteTime, Length, Name, @{Name="FileHash";Expression={(Get-FileHash -A SHA1 $_.FullName).Hash}}
 Get-ChildItem | Select-Object Name, @{Name="FileHash";Expression={(Get-FileHash $_.FullName).Hash}}
 }
+
 
 # Sample dictionry format-table
 #  $paths.GetEnumerator() | Format-Table @{label="Directory Name"; expression={$_.Key}}, @{label="Path"; expression={$_.Value}} -AutoSize

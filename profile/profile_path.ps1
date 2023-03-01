@@ -2,10 +2,12 @@ $paths  = @{
          "powershell"      =  "$HOME\Documents\PowerShell"
          "terminal"        = "D:\terminal"
          "terminal_profile"= "D:\terminal\profile"
+         "matrix"        = "D:\terminal\matrix"
          "pyscript"        = "D:\pyscripts"
          "pymath"          = "D:\pyscripts\pymath"
          "project"         = "D:\terminal\project"
          "manual"          = "$HOME\Documents\PowerShell\.template"
+
 
          }
 

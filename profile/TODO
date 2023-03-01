@@ -20,4 +20,5 @@ PS :/> figlet "TO DO List"
 [ ] create a script to display the important KEYBOARD_SHORTCUTS and what does it do! -> add alias "shortkey it the main login page
 [ ] learn to use the exising codes -> import files and call & reuse functions {arguments,parameter} | don't replicate
 [ ] rewrite this todo-list using pretty table and json similar to -> study | add_vocabulary script
-[ ] script to list all the repository directory name and its location 
+[[ ] Make the ChatGPT explain the code from <code-snippets> and save the response as Single-HTML-File.mhtml
+ [ ] Creat a Manual Script that List the JSON which contains {title,chatgpt_saved_url,the_actual_script_file_url} 

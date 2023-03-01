@@ -68,6 +68,9 @@ Write-Host "All Files Copied $profile_backup_path"
 cd $profile_backup_path
 dir 
 }
+function filterit($extension,$filter) {
+Write "No Filter Script | filterit function is empty"
+}
 function window() {
 #Open Window in Current Directory
 # Start the PowerShell ISE process
