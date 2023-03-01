@@ -6,7 +6,12 @@ PS :/> figlet "TO DO List"
   |_| \___/  |____/ \___/  |_____|_|___/\__|
 		by Sanjeev Stephan Murmu
 -------------------------------------------------------------------------
-[ ] gpg and related operational script
+[ ] when creating a script don't hardcode the variables along the logic saved the variables in a separate config file  
+[ ] Create a Template using the JSON_TODO_MENU.py Framework and reuse the code using it.
+[ ] Only Write Scripts on the weekends and not on the working days instead SAVE_IT_IN_THIS_TODO_LIST
+[ ] rewrite this Todo list using JSON_TO_MENU
+--------------------------------------------------------------------------
+[ ] gpg and related operational script using JSON_TODO_MENU.py Framework
 [ ] script that list out scripts-name,location-name defined in the profile dictionary
 [ ] cheatsheet script to store and display various commands for {powershell,bash,ssh,gpg,..}
 [*] code-snippets and sample examples {python,powershell} in the terminal directory> try (goto codes)
@@ -19,6 +24,6 @@ PS :/> figlet "TO DO List"
 [*] create a new repo 'study' -> contains a collection os json dictionaries and exercises to assist me in the preparation
 [ ] create a script to display the important KEYBOARD_SHORTCUTS and what does it do! -> add alias "shortkey it the main login page
 [ ] learn to use the exising codes -> import files and call & reuse functions {arguments,parameter} | don't replicate
-[ ] rewrite this todo-list using pretty table and json similar to -> study | add_vocabulary script
-[[ ] Make the ChatGPT explain the code from <code-snippets> and save the response as Single-HTML-File.mhtml
- [ ] Creat a Manual Script that List the JSON which contains {title,chatgpt_saved_url,the_actual_script_file_url} 
+[*] rewrite this todo-list script using pretty table and json similar to -> study | add_vocabulary script
+[ ] Make the ChatGPT explain the code from <code-snippets> and save the response as Single-HTML-File.mhtml
+[ ] Creat a Manual Script that List the JSON which contains {title,chatgpt_saved_url,the_actual_script_file_url} 
