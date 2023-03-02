@@ -2,6 +2,7 @@ $manual_home = "$HOME\Documents\PowerShell\.manual"
 
 $manual_url = @{
         "func-paste-temp" = "$manual_home\func-paste-temp"
+        "code-snippets"   = "$manual_home\code-snippets"
 
 }
 
