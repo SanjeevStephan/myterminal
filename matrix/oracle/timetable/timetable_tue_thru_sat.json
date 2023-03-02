@@ -18,5 +18,25 @@
         "title": "Static G.K",
         "time": "10AM - 11AM",
         "status": "Pending"
+    },
+    {
+        "title": "Reasoning",
+        "time": "12 AM - 5 PM",
+        "status": "Pending"
+    },
+    {
+        "title": "Maths",
+        "time": "6PM - 8PM",
+        "status": "Pending"
+    },
+    {
+        "title": "Reading Comprehension",
+        "time": "8PM - 9PM",
+        "status": "Pending"
+    },
+    {
+        "title": "Current Affairs ",
+        "time": "9PM - 10PM",
+        "status": "Pending"
     }
 ]
