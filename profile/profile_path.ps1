@@ -31,6 +31,7 @@ $script = @{
             "figlet" = "D:\terminal\py\figlet.py"
             "pymath" = "D:\pyscripts\pymath\pymath.py"
             "pygame" = "D:\pyscripts\pygame\pygame.py"
+            "check_internet" = "D:\terminal\taskarray\are-you-online.ps1"
             "google_query" = "D:\terminal\taskarray\send-google-query.ps1"
             "quotesoftheday"="D:\\terminal\\quotes-of-the-day.ps1"
             "timetable"     = "D:\terminal\matrix\oracle\timetable\launch-timetable.cmd"
