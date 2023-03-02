@@ -43,40 +43,6 @@ function initialize() {
         cd $paths["terminal"]
 
 }
-function refresh() {
-     figlet "Refreshing"
-     cls
-    .$profile
-     cd $paths["terminal"]
-}
-function lst() {
-# Display only the files names
-figlet "List File-names"
-Get-ChildItem | Select-Object Name
-}
-function alias() {
-    figlet "Get-Alias"
-    Get-Alias
-}
-function backup() {
-figlet "backup-ing profile-configs"
-Write-Host "Please Wait"
-# Copy all files & directories from the $HOME/document/powershell directory to the destination directory
-cd $profile_source
-Copy-Item -Path * -Destination $profile_backup_path -Recurse -Force -Verbose
-Write-Host "All Files Copied $profile_backup_path"
-cd $profile_backup_path
-dir 
-}
-function filterit($extension,$filter) {
-Write "No Filter Script | filterit function is empty"
-}
-function window() {
-#Open Window in Current Directory
-# Start the PowerShell ISE process
-Start-Process explorer.exe $pwd
-}
-
 
 #-------------------- Script Execution Begins from here-----
 initialize  #calling the initialize() function 
