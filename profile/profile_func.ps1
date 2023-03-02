@@ -93,7 +93,17 @@ function checkinternet() { test-connection 8.8.8.8 } # Check the connection to t
 
 #--------------------------------------{ Alphabet-E }--------------------------------------------------
 function edit($filename){
-Start-Process powershell_ise.exe $filename
+figlet "PowerShell ISE"
+
+    switch($filename) 
+    {
+        "func"    {Start-Process powershell_ise.exe $profile_source/profile_func.ps1}
+        "profile" {Start-Process powershell_ise.exe $profile_source/Microsoft.PowerShell_profile.ps1}
+        "path"    {Start-Process powershell_ise.exe $profile_source/profile_path.ps1}
+        "include" {Start-Process powershell_ise.exe $profile_source/profile_include.ps1 }
+        Default {Start-Process powershell_ise.exe $filename}
+    }
+
 }
 #--------------------------------------{ Alphabet-F }--------------------------------------------------
 function figlet($text_to_display){
