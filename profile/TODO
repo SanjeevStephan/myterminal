@@ -27,3 +27,5 @@ PS :/> figlet "TO DO List"
 [*] rewrite this todo-list script using pretty table and json similar to -> study | add_vocabulary script
 [ ] Make the ChatGPT explain the code from <code-snippets> and save the response as Single-HTML-File.mhtml
 [ ] Creat a Manual Script that List the JSON which contains {title,chatgpt_saved_url,the_actual_script_file_url} 
+[ ] create a table for pls-cli as a help table 
+[ ] fill the code-snippets in the $profile_source/.codesnippets directory with usefull and regular use code-snippets
