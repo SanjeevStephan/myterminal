@@ -13,3 +13,11 @@ matrix/oracle/__pycache__/config.cpython-311.pyc
 matrix/neo/__pycache__/log.cpython-311.pyc
 *.pyc
 .ignored_test_json_files
+matrix/oracle/JSON-Manager/json_manager_menu_v2_0.py
+matrix/oracle/JSON-Manager/json_manager_menu_v2_0.py
+matrix/oracle/todo_list/launch_manager_2.0.cmd
+matrix/oracle/todo_list/json_manager_menu_v2_0.py
+matrix/oracle/todo_list/json_manager_config_v2_0.py
+matrix/oracle/JSON-Manager/launch_manager_2.0.cmd
+matrix/oracle/JSON-Manager/json_manager_menu_v2_0.py
+matrix/oracle/JSON-Manager/json_manager_config_v2_0.py
