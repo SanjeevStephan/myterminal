@@ -3,7 +3,7 @@ import json
 import datetime
 import pyfiglet as figlet
 import webbrowser
-import prettytable_menu_config_v5_0 as config
+import json_manager_config_v5_0 as config
 from prettytable import PrettyTable
 
 
