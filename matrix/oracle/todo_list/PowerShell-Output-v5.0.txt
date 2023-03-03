@@ -1,0 +1,265 @@
+PS D:\terminal\matrix\oracle\todo_list> .\launch_manager_5.0.cmd
+
+D:\terminal\matrix\oracle\todo_list>python json_manager_menu_v5_0.py
+   _                   _                  _         _ _     _
+  (_)___  ___  _ __   | |_ ___         __| | ___   | (_)___| |_
+  | / __|/ _ \| '_ \  | __/ _ \ _____ / _` |/ _ \  | | / __| __|
+  | \__ \ (_) | | | | | || (_) |_____| (_| | (_) | | | \__ \ |_
+ _/ |___/\___/|_| |_|  \__\___/       \__,_|\___/  |_|_|___/\__|
+|__/
+
++--------+-------+--------+
+| Serial | Title | Status |
++--------+-------+--------+
++--------+-------+--------+
+What would you like to do?
+1. View your json to-do list
+2. View your json to-do list with creation-date
+3. Add an item to your json to-do list
+4. Edit an item in your json to-do list
+5. Update the Status of an item
+6. Remove an item from your json to-do list
+7. Clear your entire json to-do list
+8. How the Script works? | (not-working)
+9. Quit
+
+Enter the number of your choice: 3
+    _       _     _   ___ _
+   / \   __| | __| | |_ _| |_ ___ _ __ ___
+  / _ \ / _` |/ _` |  | || __/ _ \ '_ ` _ \
+ / ___ \ (_| | (_| |  | || ||  __/ | | | | |
+/_/   \_\__,_|\__,_| |___|\__\___|_| |_| |_|
+
+
+What do you want to add to your json to-do list?  write py script to encrypt a user entered text
+' write py script to encrypt a user entered text' has been added to your json to-do list.
++--------+-------------------------------------------------+---------+
+| Serial |                      Title                      |  Status |
++--------+-------------------------------------------------+---------+
+|   1    |  write py script to encrypt a user entered text | pending |
++--------+-------------------------------------------------+---------+
+   _                   _                  _         _ _     _
+  (_)___  ___  _ __   | |_ ___         __| | ___   | (_)___| |_
+  | / __|/ _ \| '_ \  | __/ _ \ _____ / _` |/ _ \  | | / __| __|
+  | \__ \ (_) | | | | | || (_) |_____| (_| | (_) | | | \__ \ |_
+ _/ |___/\___/|_| |_|  \__\___/       \__,_|\___/  |_|_|___/\__|
+|__/
+
++--------+-------------------------------------------------+---------+
+| Serial |                      Title                      |  Status |
++--------+-------------------------------------------------+---------+
+|   1    |  write py script to encrypt a user entered text | pending |
++--------+-------------------------------------------------+---------+
+What would you like to do?
+1. View your json to-do list
+2. View your json to-do list with creation-date
+3. Add an item to your json to-do list
+4. Edit an item in your json to-do list
+5. Update the Status of an item
+6. Remove an item from your json to-do list
+7. Clear your entire json to-do list
+8. How the Script works? | (not-working)
+9. Quit
+
+Enter the number of your choice: 3
+    _       _     _   ___ _
+   / \   __| | __| | |_ _| |_ ___ _ __ ___
+  / _ \ / _` |/ _` |  | || __/ _ \ '_ ` _ \
+ / ___ \ (_| | (_| |  | || ||  __/ | | | | |
+/_/   \_\__,_|\__,_| |___|\__\___|_| |_| |_|
+
+
+What do you want to add to your json to-do list? write another py script to decrypt the text from save file
+'write another py script to decrypt the text from save file' has been added to your json to-do list.
++--------+------------------------------------------------------------+---------+
+| Serial |                           Title                            |  Status |
++--------+------------------------------------------------------------+---------+
+|   1    |       write py script to encrypt a user entered text       | pending |
+|   2    | write another py script to decrypt the text from save file | pending |
++--------+------------------------------------------------------------+---------+
+   _                   _                  _         _ _     _
+  (_)___  ___  _ __   | |_ ___         __| | ___   | (_)___| |_
+  | / __|/ _ \| '_ \  | __/ _ \ _____ / _` |/ _ \  | | / __| __|
+  | \__ \ (_) | | | | | || (_) |_____| (_| | (_) | | | \__ \ |_
+ _/ |___/\___/|_| |_|  \__\___/       \__,_|\___/  |_|_|___/\__|
+|__/
+
++--------+------------------------------------------------------------+---------+
+| Serial |                           Title                            |  Status |
++--------+------------------------------------------------------------+---------+
+|   1    |       write py script to encrypt a user entered text       | pending |
+|   2    | write another py script to decrypt the text from save file | pending |
++--------+------------------------------------------------------------+---------+
+What would you like to do?
+1. View your json to-do list
+2. View your json to-do list with creation-date
+3. Add an item to your json to-do list
+4. Edit an item in your json to-do list
+5. Update the Status of an item
+6. Remove an item from your json to-do list
+7. Clear your entire json to-do list
+8. How the Script works? | (not-working)
+9. Quit
+
+Enter the number of your choice: 3
+    _       _     _   ___ _
+   / \   __| | __| | |_ _| |_ ___ _ __ ___
+  / _ \ / _` |/ _` |  | || __/ _ \ '_ ` _ \
+ / ___ \ (_| | (_| |  | || ||  __/ | | | | |
+/_/   \_\__,_|\__,_| |___|\__\___|_| |_| |_|
+
+
+What do you want to add to your json to-do list? Rewrite the Json Todo list manager
+'Rewrite the Json Todo list manager' has been added to your json to-do list.
++--------+------------------------------------------------------------+---------+
+| Serial |                           Title                            |  Status |
++--------+------------------------------------------------------------+---------+
+|   1    |       write py script to encrypt a user entered text       | pending |
+|   2    | write another py script to decrypt the text from save file | pending |
+|   3    |             Rewrite the Json Todo list manager             | pending |
++--------+------------------------------------------------------------+---------+
+   _                   _                  _         _ _     _
+  (_)___  ___  _ __   | |_ ___         __| | ___   | (_)___| |_
+  | / __|/ _ \| '_ \  | __/ _ \ _____ / _` |/ _ \  | | / __| __|
+  | \__ \ (_) | | | | | || (_) |_____| (_| | (_) | | | \__ \ |_
+ _/ |___/\___/|_| |_|  \__\___/       \__,_|\___/  |_|_|___/\__|
+|__/
+
++--------+------------------------------------------------------------+---------+
+| Serial |                           Title                            |  Status |
++--------+------------------------------------------------------------+---------+
+|   1    |       write py script to encrypt a user entered text       | pending |
+|   2    | write another py script to decrypt the text from save file | pending |
+|   3    |             Rewrite the Json Todo list manager             | pending |
++--------+------------------------------------------------------------+---------+
+What would you like to do?
+1. View your json to-do list
+2. View your json to-do list with creation-date
+3. Add an item to your json to-do list
+4. Edit an item in your json to-do list
+5. Update the Status of an item
+6. Remove an item from your json to-do list
+7. Clear your entire json to-do list
+8. How the Script works? | (not-working)
+9. Quit
+
+Enter the number of your choice: 4
+ _____    _ _ _     ___ _
+| ____|__| (_) |_  |_ _| |_ ___ _ __ ___
+|  _| / _` | | __|  | || __/ _ \ '_ ` _ \
+| |__| (_| | | |_   | || ||  __/ | | | | |
+|_____\__,_|_|\__| |___|\__\___|_| |_| |_|
+
+
++--------+------------------------------------------------------------+---------+
+| Serial |                           Title                            |  Status |
++--------+------------------------------------------------------------+---------+
+|   1    |       write py script to encrypt a user entered text       | pending |
+|   2    | write another py script to decrypt the text from save file | pending |
+|   3    |             Rewrite the Json Todo list manager             | pending |
++--------+------------------------------------------------------------+---------+
+Enter the number of the item you want to edit: JSON Todo list manager updated version 5.0 (rewritten-script)
+Invalid input. Please try again.
++--------+------------------------------------------------------------+---------+
+| Serial |                           Title                            |  Status |
++--------+------------------------------------------------------------+---------+
+|   1    |       write py script to encrypt a user entered text       | pending |
+|   2    | write another py script to decrypt the text from save file | pending |
+|   3    |             Rewrite the Json Todo list manager             | pending |
++--------+------------------------------------------------------------+---------+
+Enter the number of the item you want to edit: 3
+Enter new title for 'Rewrite the Json Todo list manager':  JSON Todo list manager updated version 5.0 (rewritten-script)
+
+' JSON Todo list manager updated version 5.0 (rewritten-script)' has been updated in your json to-do list.
++--------+----------------------------------------------------------------+---------+
+| Serial |                             Title                              |  Status |
++--------+----------------------------------------------------------------+---------+
+|   1    |         write py script to encrypt a user entered text         | pending |
+|   2    |   write another py script to decrypt the text from save file   | pending |
+|   3    |  JSON Todo list manager updated version 5.0 (rewritten-script) | pending |
++--------+----------------------------------------------------------------+---------+
+   _                   _                  _         _ _     _
+  (_)___  ___  _ __   | |_ ___         __| | ___   | (_)___| |_
+  | / __|/ _ \| '_ \  | __/ _ \ _____ / _` |/ _ \  | | / __| __|
+  | \__ \ (_) | | | | | || (_) |_____| (_| | (_) | | | \__ \ |_
+ _/ |___/\___/|_| |_|  \__\___/       \__,_|\___/  |_|_|___/\__|
+|__/
+
++--------+----------------------------------------------------------------+---------+
+| Serial |                             Title                              |  Status |
++--------+----------------------------------------------------------------+---------+
+|   1    |         write py script to encrypt a user entered text         | pending |
+|   2    |   write another py script to decrypt the text from save file   | pending |
+|   3    |  JSON Todo list manager updated version 5.0 (rewritten-script) | pending |
++--------+----------------------------------------------------------------+---------+
+What would you like to do?
+1. View your json to-do list
+2. View your json to-do list with creation-date
+3. Add an item to your json to-do list
+4. Edit an item in your json to-do list
+5. Update the Status of an item
+6. Remove an item from your json to-do list
+7. Clear your entire json to-do list
+8. How the Script works? | (not-working)
+9. Quit
+
+Enter the number of your choice: 5
+ _   _           _       _         ____  _        _
+| | | |_ __   __| | __ _| |_ ___  / ___|| |_ __ _| |_ _   _ ___
+| | | | '_ \ / _` |/ _` | __/ _ \ \___ \| __/ _` | __| | | / __|
+| |_| | |_) | (_| | (_| | ||  __/  ___) | || (_| | |_| |_| \__ \
+ \___/| .__/ \__,_|\__,_|\__\___| |____/ \__\__,_|\__|\__,_|___/
+      |_|
+
++--------+----------------------------------------------------------------+---------+
+| Serial |                             Title                              |  Status |
++--------+----------------------------------------------------------------+---------+
+|   1    |         write py script to encrypt a user entered text         | pending |
+|   2    |   write another py script to decrypt the text from save file   | pending |
+|   3    |  JSON Todo list manager updated version 5.0 (rewritten-script) | pending |
++--------+----------------------------------------------------------------+---------+
+Enter the number of the item you want to edit: 3
+Current Status of ' JSON Todo list manager updated version 5.0 (rewritten-script)' is 'pending': done
+' JSON Todo list manager updated version 5.0 (rewritten-script)' has been updated to 'done'.
++--------+----------------------------------------------------------------+---------+
+| Serial |                             Title                              |  Status |
++--------+----------------------------------------------------------------+---------+
+|   1    |         write py script to encrypt a user entered text         | pending |
+|   2    |   write another py script to decrypt the text from save file   | pending |
+|   3    |  JSON Todo list manager updated version 5.0 (rewritten-script) |   done  |
++--------+----------------------------------------------------------------+---------+
+   _                   _                  _         _ _     _
+  (_)___  ___  _ __   | |_ ___         __| | ___   | (_)___| |_
+  | / __|/ _ \| '_ \  | __/ _ \ _____ / _` |/ _ \  | | / __| __|
+  | \__ \ (_) | | | | | || (_) |_____| (_| | (_) | | | \__ \ |_
+ _/ |___/\___/|_| |_|  \__\___/       \__,_|\___/  |_|_|___/\__|
+|__/
+
++--------+----------------------------------------------------------------+---------+
+| Serial |                             Title                              |  Status |
++--------+----------------------------------------------------------------+---------+
+|   1    |         write py script to encrypt a user entered text         | pending |
+|   2    |   write another py script to decrypt the text from save file   | pending |
+|   3    |  JSON Todo list manager updated version 5.0 (rewritten-script) |   done  |
++--------+----------------------------------------------------------------+---------+
+What would you like to do?
+1. View your json to-do list
+2. View your json to-do list with creation-date
+3. Add an item to your json to-do list
+4. Edit an item in your json to-do list
+5. Update the Status of an item
+6. Remove an item from your json to-do list
+7. Clear your entire json to-do list
+8. How the Script works? | (not-working)
+9. Quit
+
+Enter the number of your choice: 9
+  ____                 _ ____
+ / ___| ___   ___   __| | __ ) _   _  ___
+| |  _ / _ \ / _ \ / _` |  _ \| | | |/ _ \
+| |_| | (_) | (_) | (_| | |_) | |_| |  __/
+ \____|\___/ \___/ \__,_|____/ \__, |\___|
+                               |___/
+
+Goodbye!
+PS D:\terminal\matrix\oracle\todo_list>
