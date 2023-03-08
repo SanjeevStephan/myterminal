@@ -36,11 +36,18 @@ function initialize() {
         & python $script["figlet"] --message $initial_title
         
         #call the function helptab()
-        helptab("terminal") 
+        # helptab("terminal") 
         #load the todo-lis from 'pls-cli' pymodule
-        pls
+        #pls
         .$script["quotesoftheday"] # display quotes of the day
         cd $paths["terminal"]
+
+        amiconnected
+
+}
+function goodbye(){
+    figlet("Good Bye!Stephan")
+    shutdown -s -t 00
 
 }
 

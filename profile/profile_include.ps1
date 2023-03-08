@@ -12,3 +12,11 @@ $include_ps1 = @{
 . $include_ps1["profile_func"]
 . $include_ps1["profile_manual"]
 . $include_ps1["profile_dictionary"]
+
+# Unofficial and temporary includes
+$tempInclude = @{
+    "shortcutDir" = "$HOME\Documents\PowerShell\toggle-shortcut-directory.ps1"
+
+}
+
+. $tempInclude["shortcutDir"]

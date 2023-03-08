@@ -4,29 +4,33 @@
 
 
 <#--------------------------------------{ Function Index }------------------------------------------------
-S.No        Function-Name                                 What-does-it-do?
- 1.         addtest($filename)                            Add the prefix "test_" to a given string argument 
- 2.         clip($action,$filename) 
- 3.         copypath()
- 4.         edit($filename)
- 5.         figlet($text_to_display)
- 6.         filterfile($extension,$substring)
- 7.         google()
- 8.         greet($name,$age)
- 9.         getfilename($script_extension)
- 10.        goto($dir_name)
- 11.        helptab($task_name)
- 12         lst()
- 13.        launch($app_name)
- 14.        listhash()
- 15.        nano($filename)
- 16.        paste-temp($script_extension,$filename)
- 17.        pinggoogle()
- 18.        refresh()
- 18.        run($script_name_n_url)
- 19.        snippets($script_extension)
- 20.        TODO($action)
- 21.        window()
+        Function-Name                                 What-does-it-do?
+        alias()
+        addtest($filename)                            Add the prefix "test_" to a given string argument 
+        amiconnected()
+        clip($action,$filename) 
+        copypath()
+        checkinternet()
+        edit($filename)
+        figlet($text_to_display)
+        filterfile($extension,$substring)
+        google()
+        greet($name,$age)
+        getfilename($script_extension)
+        goto($dir_name)
+        helptab($task_name)
+        lst()
+        launch($app_name)
+        listhash()
+        nano($filename)
+        paste-temp($script_extension,$filename)
+        pinggoogle()
+        refresh()
+        run($script_name_n_url)
+        removetest($filename)                         Remove the prefix "test_" from a given string argument 
+        snippets($script_extension)
+        TODO($action)
+        window()
 
 
 
@@ -52,7 +56,16 @@ Write-Host "$filename successfully renamed to $file_to_be_renamed"
 
 }
 
+function amiconnected() {
+#figlet "Checking iNTERNET "
 
+    #while ($true) {
+        if (Test-Connection 8.8.8.8 -Count 1 -Quiet) { Write-Host "[CONNECTED] Yes! you are connected to iNTERNET!" } 
+        else { Write-Host "[DISCONNECTED] No! you are not connected to the iNTERNET anymore!" }
+
+        #Start-Sleep -Seconds 5
+   # }
+}
 
 
 #--------------------------------------{ Alphabet-B }--------------------------------------------------
@@ -86,6 +99,8 @@ function copypath() {
 }
 
 function checkinternet() { test-connection 8.8.8.8 } # Check the connection to the google-dns-server 
+
+
 
 #--------------------------------------{ Alphabet-D }--------------------------------------------------
 
@@ -291,6 +306,14 @@ Start-Process $profile_source\nano.exe "$filename"
 }
 #--------------------------------------{ Alphabet-O }--------------------------------------------------
 
+function openinbrave($htmlfile){
+
+$location = Get-Location
+$localpath = "file:\\$location$htmlfile"
+$webpath = $localpath.Replace("\","/")
+Write-Output "Opening path in brave: $webpath"
+Start-Process brave.exe $webpath
+}
 
 #--------------------------------------{ Alphabet-P }--------------------------------------------------
 
@@ -304,6 +327,7 @@ function paste-temp($script_extension,$filename) {
         "cmdlet" {Get-Content "$profile_source\.template\tempalte4cmdlet" | Out-File $filename}
         "gpt4py" {Get-Content "$profile_source\.template\gpt-template4py" | Out-File $filename}
         "gpt4ps" {Get-Content "$profile_source\.template\gpt-template4ps1" | Out-File $filename}
+        "pshelp" {Get-Content "$profile_source\.template\help4ps1" | Out-File $filename} 
          Default {cat $manual_url["func-paste-temp"] }
 
     }
@@ -374,6 +398,18 @@ function run($script_name_n_url) {
     }
 }
 
+function removetest($filename){
+#Add the prefix "test_" to a given string argument:
+#$file_to_be_renamed = "test_" + "$filename"
+
+$filename = "$filename"
+$file_to_be_renamed = $filename.Replace("test_","")
+Rename-Item $filename $file_to_be_renamed
+#check_file_exists = $pwd + "$filename"
+#bool = Test-Path check_file_exists
+Write-Host "$filename successfully renamed to $file_to_be_renamed"
+
+}
 
 #--------------------------------------{ Alphabet-S }--------------------------------------------------
 
