@@ -29,3 +29,7 @@ PS :/> figlet "TO DO List"
 [ ] Creat a Manual Script that List the JSON which contains {title,chatgpt_saved_url,the_actual_script_file_url} 
 [ ] create a table for pls-cli as a help table 
 [ ] fill the code-snippets in the $profile_source/.codesnippets directory with usefull and regular use code-snippets
+[ ] write a script to list all the hidden directories [directory list] and hide and unhide[normal] directories
+[ ] Create a powershell script to launch various desktop apps like brave and snipping tool 
+[ ] create a master_console in powershell & files should be named [profile_console] located at $profile_source
+[ ] creat a powershell script to auto-copy code-snippets to clipboard such as powershell or python parameter-args[]
