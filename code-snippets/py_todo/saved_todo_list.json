@@ -1,0 +1,22 @@
+[
+    {
+        "title": " write py script to encrypt a user entered text",
+        "date": "2023-03-03 23:08:47",
+        "status": "pending"
+    },
+    {
+        "title": "write another py script to decrypt the text from save file",
+        "date": "2023-03-03 23:09:46",
+        "status": "pending"
+    },
+    {
+        "title": " JSON Todo list manager updated version 5.0 (rewritten-script)",
+        "date": "2023-03-03 23:10:54",
+        "status": "done"
+    },
+    {
+        "title": "added note from linux os (kali-linux)",
+        "date": "2023-03-06 20:06:13",
+        "status": "Done"
+    }
+]
