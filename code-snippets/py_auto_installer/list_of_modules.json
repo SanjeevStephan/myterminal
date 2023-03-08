@@ -18,5 +18,10 @@
         "desc": "Formatted-Table for the json dictionary",
         "syntax": "pip install prettytable",
         "status": "installed"
+    },
+    "nltk": {
+        "desc": "natural language tool kit",
+        "syntax": "pip install nltk",
+        "status": "not installed"
     }
 }
