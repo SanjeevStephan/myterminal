@@ -1,0 +1,1 @@
+Set-ExecutionPolicy -ExecutionPolicy RemotedSigned -Scope CurrentUser
