@@ -22,3 +22,4 @@ matrix/oracle/JSON-Manager/launch_manager_2.0.cmd
 matrix/oracle/JSON-Manager/json_manager_menu_v2_0.py
 matrix/oracle/JSON-Manager/json_manager_config_v2_0.py
 shortkeys.ps1
+.ignored_env_var
