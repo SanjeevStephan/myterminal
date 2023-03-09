@@ -299,11 +299,14 @@ Get-ChildItem | Select-Object Name, @{Name="FileHash";Expression={(Get-FileHash 
 
 
 #--------------------------------------{ Alphabet-N }--------------------------------------------------
-function nano($filename){
+ <#
+ function nano($filename){
 #Edit file with format (file_name) in terminal itself (require no-space)
 #Cannot Edit files with format 'sample text.txt' format (it has space)
 Start-Process $profile_source\nano.exe "$filename"
 }
+
+#>
 #--------------------------------------{ Alphabet-O }--------------------------------------------------
 
 function openinbrave($htmlfile){

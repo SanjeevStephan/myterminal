@@ -28,12 +28,12 @@ $goto_paths  = @{
           }
 
 $script = @{
-            "figlet" = "D:\terminal\py\figlet.py"
+            "figlet" = "D:\terminal\pkgs\figlet.py"
             "pymath" = "D:\pyscripts\pymath\pymath.py"
             "pygame" = "D:\pyscripts\pygame\pygame.py"
             "check_internet" = "D:\terminal\taskarray\are-you-online.ps1"
             "google_query" = "D:\terminal\taskarray\send-google-query.ps1"
-            "quotesoftheday"="D:\\terminal\\quotes-of-the-day.ps1"
+            "quotesoftheday"="D:\\terminal\pkgs\random_quotes_generator\\quotes-of-the-day.ps1"
             "timetable"     = "D:\terminal\matrix\oracle\timetable\launch-timetable.cmd"
             "timetable_mwf" = "D:\terminal\matrix\oracle\timetable\launch-timetable-MWF.cmd"
             "timetable_tts" = "D:\terminal\matrix\oracle\timetable\launch-timetable-TTS.cmd"
