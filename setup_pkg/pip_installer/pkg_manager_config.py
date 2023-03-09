@@ -1,7 +1,7 @@
 
 json_filename = "all_pkgs.json"
 
-script_name = "Pkg Manager"
+script_name = "Pip Installer"
 
 
 column_header_1 = "Serial"

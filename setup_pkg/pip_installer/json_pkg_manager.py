@@ -47,6 +47,7 @@ def add_package(data):
     save_data(data)
     print(f"{package_name} has been added to the list.")
 
+# This function is Not-called-by-the-root-setup-scripts.ps1
 def edit_package(data):
     package_name = input("Enter package name to edit: ")
     if package_name not in data:
@@ -59,6 +60,7 @@ def edit_package(data):
     save_data(data)
     print(f"{package_name} has been updated.")
 
+# This function is Not-called-by-the-root-setup-scripts.ps1
 def update_status(data):
     package_name = input("Enter package name to update status: ")
     if package_name not in data:
@@ -69,6 +71,7 @@ def update_status(data):
     save_data(data)
     print(f"{package_name} status has been updated.")
 
+# This function is Not-called-by-the-root-setup-scripts.ps1
 def remove_package(data):
     package_name = input("Enter package name to remove: ")
     if package_name not in data:
@@ -78,6 +81,7 @@ def remove_package(data):
     save_data(data)
     print(f"{package_name} has been removed from the list.")
 
+# This function is Not-called-by-the-root-setup-scripts.ps1
 def clear_list(data):
     data.clear()
     save_data(data)
@@ -89,12 +93,14 @@ def save_data(data):
         json.dump(data, f, indent=4)
 
 def check_for_installed_pkgs(json_file) :
-    print("Check Packages")
+    print("Check and Update Packages Status")
     checkpkgs.check4installPkgs(json_file)
 
 def install_pkgs() :
     print("Begin Installing Pkgs")
     installpkgs.begin_installing_pkgs()
+
+# This function is Not-called-by-the-root-setup-scripts.ps1    
 def menu():
 
     # Load JSON data from file
@@ -109,7 +115,7 @@ def menu():
         print("4. Edit a package")
         print("5. Update the status of a package")
         print("6. Check for Install Packages")
-        print("7. Check for Install Packages")        
+        print("7. Install Packages")        
         print("8. Remove a package")
         print("9. Clear the entire list")
         print("10. Quit")
@@ -141,4 +147,16 @@ def menu():
             print("Invalid input. Please try again.")
 
 showFiglet(script_name)
-menu()
+# menu()
+
+def initialize() :
+
+    # Load JSON data from file
+    with open(json_filename) as f:
+        data = json.load(f)
+
+    view_list(data)
+    check_for_installed_pkgs(json_filename)   
+    install_pkgs() 
+
+initialize() # script starts from here
