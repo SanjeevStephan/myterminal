@@ -33,3 +33,5 @@ PS :/> figlet "TO DO List"
 [ ] Create a powershell script to launch various desktop apps like brave and snipping tool 
 [ ] create a master_console in powershell & files should be named [profile_console] located at $profile_source
 [ ] creat a powershell script to auto-copy code-snippets to clipboard such as powershell or python parameter-args[]
+[ ] create a script to get a quick overview of the system specification i.e 
+	such as if_python_installed, $home_powershell directory exists or not, powershell v7.3.3 is installed or not
