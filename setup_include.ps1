@@ -18,3 +18,4 @@ $include_setup_ps1 = @{
 . .\setup_script.ps1
 . .\setup_func.ps1
 . .\setup_guide.ps1
+. .\setup_filesdir.ps1

@@ -7,14 +7,67 @@
     
    This PowerShell script copys all the files and directory from 
    current working directory to the 'User-Documents/PowerShell' Directory 
+
+.PARAMETER
+
     
--------------------------------|| CODE_BELOW ||-----------------------------
-#>
 
-. .\paths.ps1
-#.\paths.ps1
+.EXAMPLE
+    
+    
+     
+.AUTHOR
+    
+    -Sanjeev Stephan Murmu
 
-function restoreProfile(){
+.LINK
+
+.NOTES
+    
+
+.
+-------------------------------|| CODE_BELOW ||----------------------------- #>
+
+
+   param(
+       [Parameter(Mandatory=$true)]
+       [string]$Action
+   )
+
+
+
+cd "D:\terminal\setup_task\"
+
+. .\paths.ps1 #included paths.ps1
+
+#$text_to_return = "nothing"
+
+function Backup_Profile() {
+#cp * ~/Documents/PowerShell
+
+$source = "$HOME\Documents\PowerShell\Microsoft.PowerShell_profile.ps1"
+$destination = "D:\terminal"
+
+
+# Create the destination directory if it does not exist
+#if (!(Test-Path -Path $destination)) {
+#    New-Item -ItemType Directory -Path $destination
+#}
+
+# Copy all files and directories from the source directory to the destination directory
+Copy-Item -Path $source -Destination $destination
+$check_status = test-path "$destination\Microsoft.PowerShell_profile.ps1"
+if($check_status) {
+    Write-Host "Profile Copied Successfully"
+}
+else {
+    Write-Host "Unable to Copy profile"
+}
+
+
+
+}
+function Restore_Profile(){
 
     # Copy all files and directories from the source directory to the destination directory
 
@@ -32,7 +85,7 @@ function restoreProfile(){
 
 
 }
-function renameDirectory() {
+function Rename_Profile_2_PowerShell() {
 
     Move-Item $documents_restored_profile $profile_source
 
@@ -46,5 +99,29 @@ function renameDirectory() {
 
 }
 
-restoreProfile
-renameDirectory
+function Think_Tank($action){
+echo "Performing $action Operation of Profile Directories" 
+
+
+ if (Test-Path $profile_source) { return $text_to_return = "PowerShell Directory already exists | $action aborted" }
+    else 
+    {  
+             switch($action)
+            {
+                "restore" 
+                { # Restore_Profile 
+                  # Rename_Profile_2_PowerShell
+                }
+                "backup"  {  } # Backup_Profile
+                Default { return $text_to_return = "Invalid Input "} 
+            }
+    }
+
+
+   
+
+}
+
+Think_Tank($Action)
+
+return $text_to_return

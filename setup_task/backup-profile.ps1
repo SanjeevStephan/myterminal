@@ -29,28 +29,6 @@
 -------------------------------|| CODE_BELOW ||-----------------------------
 #>
 
-#cp * ~/Documents/PowerShell
-
-$source = "$HOME\Documents\PowerShell\Microsoft.PowerShell_profile.ps1"
-$destination = "D:\terminal"
-
-
-# Create the destination directory if it does not exist
-#if (!(Test-Path -Path $destination)) {
-#    New-Item -ItemType Directory -Path $destination
-#}
-
-# Copy all files and directories from the source directory to the destination directory
-Copy-Item -Path $source -Destination $destination
-$check_status = test-path "$destination\Microsoft.PowerShell_profile.ps1"
-if($check_status) {
-    Write-Host "Profile Copied Successfully"
-}
-else {
-    Write-Host "Unable to Copy profile"
-}
-
-
 
 <# 
 -------------------------------|| CODE_ABOVE ||-----------------------------
