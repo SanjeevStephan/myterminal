@@ -1,0 +1,26 @@
+[
+    {
+        "Name": "Sanjeev",
+        "Age": "26",
+        "Profession": "Indian Civil Servant",
+        "Residence": "Godda"
+    },
+    {
+        "Name": "Anurag",
+        "Age": "30",
+        "Profession": "Banker",
+        "Residence": "Ranchi"
+    },
+    {
+        "Name": "Ashok",
+        "Age": "28",
+        "Profession": "Marketing Associate",
+        "Residence": "Ranchi"
+    },
+    {
+        "Name": "Santosh",
+        "Age": "27",
+        "Profession": "Businessman",
+        "Residence": "Teldiha"
+    }
+]
