@@ -1,18 +1,33 @@
+#-------------------- Include <this-file> in the setup.ps1 ----------------
+# . .\setup_config.ps1
 
 $variable = @{
-    "script_name"  = "Setup Script v1.0"
-    "author_name" = "Sanjeev Stephan Murmu"
+    "script_name"    = "Terminal Setup Script"
+    "script_version" = "v1.0"
+    "author_name"    = "Sanjeev Stephan Murmu"
+    "created_on"     = "9th March 2023"
+
+
+}
+<#  
+    Script FEATURES -> enable | disable 
+#>
+$enable = @{
+    "show_task_details" = "disable"
+
+
+}
+<#
+    Executable Script -> yes | no
+#>
+$executable = @{
+    "test"                    = "no"
+    "copy_files_dependencies" = "no"
+    "restore_profile"         = "no"
+    "install_python"          = "no"
+    "pip_installer"           = "no"
+
 
 
 }
 
-
-$config = @{
-    "restore_profile" = "no"
-    "install_python"  = "no"
-    "pip_installer"   = "yes"
-
-}
-
-#-------------------- Include <this-file> in the Below File ----------------
-#. "$TERMINAL\setup_include.ps1"
