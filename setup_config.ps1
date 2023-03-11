@@ -21,10 +21,10 @@ $enable = @{
     Executable Script -> yes | no
 #>
 $executable = @{
-    "test"                    = "no"
+    "test"                    = "yes"
     "copy_files_dependencies" = "no"
     "restore_profile"         = "no"
-    "install_python"          = "no"
+    "install_python"          = "yes"
     "pip_installer"           = "no"
 
 
