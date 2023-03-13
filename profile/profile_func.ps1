@@ -1,7 +1,7 @@
 
 #-------------------- Include <this-file> in the Below File ----------------
 #. "$HOME\Documents\PowerShell\profile_include.ps1"
-
+#. $HOME\Documents\PowerShell\profile_paths.ps1
 
 <#--------------------------------------{ Function Index }------------------------------------------------
         Function-Name                                 What-does-it-do?
@@ -19,10 +19,15 @@
         getfilename($script_extension)
         goto($dir_name)
         helptab($task_name)
+        iamonline()
         lst()
         launch($app_name)
         listhash()
         nano($filename)
+        openinbrave()
+        openprocess()
+        openfilter()
+        psindex()
         paste-temp($script_extension,$filename)
         pinggoogle()
         refresh()
@@ -30,6 +35,7 @@
         removetest($filename)                         Remove the prefix "test_" from a given string argument 
         snippets($script_extension)
         TODO($action)
+        timeperques()
         window()
 
 
@@ -56,15 +62,10 @@ Write-Host "$filename successfully renamed to $file_to_be_renamed"
 
 }
 
-function amiconnected() {
-#figlet "Checking iNTERNET "
+function alphabet() {
 
-    #while ($true) {
-        if (Test-Connection 8.8.8.8 -Count 1 -Quiet) { Write-Host "[CONNECTED] Yes! you are connected to iNTERNET!" } 
-        else { Write-Host "[DISCONNECTED] No! you are not connected to the iNTERNET anymore!" }
+.$Script["alphabet_position"]
 
-        #Start-Sleep -Seconds 5
-   # }
 }
 
 
@@ -264,6 +265,16 @@ function helptab($task_name){
 # Sample dictionry format-table
 #  $paths.GetEnumerator() | Format-Table @{label="Directory Name"; expression={$_.Key}}, @{label="Path"; expression={$_.Value}} -AutoSize
 
+function iamonline() {
+#figlet "Checking iNTERNET "
+
+    #while ($true) {
+        if (Test-Connection 8.8.8.8 -Count 1 -Quiet) { Write-Host "[CONNECTED] Yes! you are connected to iNTERNET!" } 
+        else { Write-Host "[DISCONNECTED] No! you are not connected to the iNTERNET anymore!" }
+
+        #Start-Sleep -Seconds 5
+   # }
+}
 
 
 
@@ -317,6 +328,11 @@ $webpath = $localpath.Replace("\","/")
 Write-Output "Opening path in brave: $webpath"
 Start-Process brave.exe $webpath
 }
+
+function openprocess() { get-process | out-gridview }
+function openfilter() { dir | Out-GridView }
+function psindex() { brave "https://ss64.com/ps/"  }
+
 
 #--------------------------------------{ Alphabet-P }--------------------------------------------------
 
@@ -414,6 +430,12 @@ Write-Host "$filename successfully renamed to $file_to_be_renamed"
 
 }
 
+function randommath() {
+cd $paths["random_math"]
+.$script["random_math"]
+
+}
+
 #--------------------------------------{ Alphabet-S }--------------------------------------------------
 
 function snippets($script_extension) {
@@ -444,7 +466,22 @@ figlet "Codes-Snippets"
     }
 
 }
+function showip() {
 
+$status = "DISCONNECTED"
+
+        if (Test-Connection 8.8.8.8 -Count 1 -Quiet) { $status = "CONNECTED" } 
+        else { $status = "DISCONNECTED" }
+
+
+<#
+ SHOW IP
+#>
+$ip_address = ipconfig | Select-String "IPv4 Address" | Select-Object -First 1 | ForEach-Object { $_.ToString().Split(":")[1].Trim() }
+
+& python $script["showip_status"] $ip_address $status   
+#show_prettytable.py
+}
 #--------------------------------------{ Alphabet-T }--------------------------------------------------
 function TODO($action){
  # Display the TODO-List"
@@ -460,6 +497,11 @@ function TODO($action){
         Default {Write-Host "Want to Edit | Try -> TODO <edit | list | exit>" }
     }
 
+}
+
+function timeperques(){
+figlet "Time Per Questions"
+.$script["time_per_ques"]
 }
 
 #--------------------------------------{ Alphabet-U }--------------------------------------------------
