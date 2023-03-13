@@ -42,8 +42,9 @@ function initialize() {
         .$script["quotesoftheday"] # display quotes of the day
         cd $paths["terminal"]
 
-        amiconnected
-
+        
+        showip
+        iamonline
 }
 function goodbye(){
     figlet("Good Bye!Stephan")
