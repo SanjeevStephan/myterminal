@@ -1,0 +1,1 @@
+ Get-ChildItem env: | Select Key,Value | Export-Csv D:\terminal\window_environment_variables\backupenvvariables.txt -NoTypeInformation
