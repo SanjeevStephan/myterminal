@@ -1,0 +1,150 @@
+[
+  {
+    "Name": "ALLUSERSPROFILE",
+    "Value": "C:\\ProgramData"
+  },
+  {
+    "Name": "APPDATA",
+    "Value": "C:\\Users\\Marcus\\AppData\\Roaming"
+  },
+  {
+    "Name": "CommonProgramFiles",
+    "Value": "C:\\Program Files\\Common Files"
+  },
+  {
+    "Name": "CommonProgramFiles(x86)",
+    "Value": "C:\\Program Files (x86)\\Common Files"
+  },
+  {
+    "Name": "CommonProgramW6432",
+    "Value": "C:\\Program Files\\Common Files"
+  },
+  {
+    "Name": "COMPUTERNAME",
+    "Value": "DESKTOP-4DH5PRC"
+  },
+  {
+    "Name": "ComSpec",
+    "Value": "C:\\Windows\\system32\\cmd.exe"
+  },
+  {
+    "Name": "DriverData",
+    "Value": "C:\\Windows\\System32\\Drivers\\DriverData"
+  },
+  {
+    "Name": "HOMEDRIVE",
+    "Value": "C:"
+  },
+  {
+    "Name": "HOMEPATH",
+    "Value": "\\Users\\Marcus"
+  },
+  {
+    "Name": "LOCALAPPDATA",
+    "Value": "C:\\Users\\Marcus\\AppData\\Local"
+  },
+  {
+    "Name": "LOGONSERVER",
+    "Value": "\\\\DESKTOP-4DH5PRC"
+  },
+  {
+    "Name": "NUMBER_OF_PROCESSORS",
+    "Value": "2"
+  },
+  {
+    "Name": "OneDrive",
+    "Value": "C:\\Users\\Marcus\\OneDrive"
+  },
+  {
+    "Name": "OS",
+    "Value": "Windows_NT"
+  },
+  {
+    "Name": "Path",
+    "Value": "C:\\Program Files\\PowerShell\\7;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\PowerShell\\7\\;C:\\Users\\Marcus\\AppData\\Local\\Microsoft\\WindowsApps"
+  },
+  {
+    "Name": "PATHEXT",
+    "Value": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL"
+  },
+  {
+    "Name": "POWERSHELL_DISTRIBUTION_CHANNEL",
+    "Value": "MSI:Windows 10 Pro"
+  },
+  {
+    "Name": "PROCESSOR_ARCHITECTURE",
+    "Value": "AMD64"
+  },
+  {
+    "Name": "PROCESSOR_IDENTIFIER",
+    "Value": "Intel64 Family 6 Model 78 Stepping 3, GenuineIntel"
+  },
+  {
+    "Name": "PROCESSOR_LEVEL",
+    "Value": "6"
+  },
+  {
+    "Name": "PROCESSOR_REVISION",
+    "Value": "4e03"
+  },
+  {
+    "Name": "ProgramData",
+    "Value": "C:\\ProgramData"
+  },
+  {
+    "Name": "ProgramFiles",
+    "Value": "C:\\Program Files"
+  },
+  {
+    "Name": "ProgramFiles(x86)",
+    "Value": "C:\\Program Files (x86)"
+  },
+  {
+    "Name": "ProgramW6432",
+    "Value": "C:\\Program Files"
+  },
+  {
+    "Name": "PSModulePath",
+    "Value": "C:\\Users\\Marcus\\Documents\\PowerShell\\Modules;C:\\Program Files\\PowerShell\\Modules;c:\\program files\\powershell\\7\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules"
+  },
+  {
+    "Name": "PUBLIC",
+    "Value": "C:\\Users\\Public"
+  },
+  {
+    "Name": "SystemDrive",
+    "Value": "C:"
+  },
+  {
+    "Name": "SystemRoot",
+    "Value": "C:\\Windows"
+  },
+  {
+    "Name": "TEMP",
+    "Value": "C:\\Users\\Marcus\\AppData\\Local\\Temp"
+  },
+  {
+    "Name": "TMP",
+    "Value": "C:\\Users\\Marcus\\AppData\\Local\\Temp"
+  },
+  {
+    "Name": "USERDOMAIN",
+    "Value": "DESKTOP-4DH5PRC"
+  },
+  {
+    "Name": "USERDOMAIN_ROAMINGPROFILE",
+    "Value": "DESKTOP-4DH5PRC"
+  },
+  {
+    "Name": "USERNAME",
+    "Value": "Marcus"
+  },
+  {
+    "Name": "USERPROFILE",
+    "Value": "C:\\Users\\Marcus"
+  },
+  {
+    "Name": "windir",
+    "Value": "C:\\Windows"
+  }
+]

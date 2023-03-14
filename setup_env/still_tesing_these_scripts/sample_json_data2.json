@@ -1,0 +1,18 @@
+[
+      {
+        "Name": "OneDrive",
+        "Value": "C:\Users\Marcus\OneDrive"
+      },
+      {
+        "Name": "Path",
+        "Value": "%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;"
+      },
+      {
+        "Name": "TEMP",
+        "Value": "%USERPROFILE%\AppData\Local\Temp"
+      },
+      {
+        "Name": "TMP",
+        "Value": "%USERPROFILE%\AppData\Local\Temp"
+      }
+]
