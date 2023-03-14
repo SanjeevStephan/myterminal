@@ -47,3 +47,8 @@ $script = @{
     
            }
            #https://ss64.com/ps/
+
+$json = @{
+        "quotes" = "D:\terminal\matrix\oracle\random_quotes_generator\saved_quotes.json"
+
+}
