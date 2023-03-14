@@ -7,7 +7,8 @@
         Function-Name                                 What-does-it-do?
         alias()
         addtest($filename)                            Add the prefix "test_" to a given string argument 
-        amiconnected()
+        alphabet()
+        backup()()
         clip($action,$filename) 
         copypath()
         checkinternet()
@@ -32,8 +33,11 @@
         pinggoogle()
         refresh()
         run($script_name_n_url)
-        removetest($filename)                         Remove the prefix "test_" from a given string argument 
+        removetest($filename)                         Remove the prefix "test_" from a given string argument
+        randommath() 
+        replace2dash
         snippets($script_extension)
+        showip()
         TODO($action)
         timeperques()
         window()
@@ -117,6 +121,7 @@ figlet "PowerShell ISE"
         "profile" {Start-Process powershell_ise.exe $profile_source/Microsoft.PowerShell_profile.ps1}
         "path"    {Start-Process powershell_ise.exe $profile_source/profile_path.ps1}
         "include" {Start-Process powershell_ise.exe $profile_source/profile_include.ps1 }
+        "quotes"  { cd $env:snippet}
         Default {Start-Process powershell_ise.exe $filename}
     }
 
@@ -436,6 +441,39 @@ cd $paths["random_math"]
 
 }
 
+function replace($txt_to_replace,$txt_to_be_replace_with) {
+ # Replace all occurance of $txt_to_replace with $txt_to_be_replace_with in the file names
+ # of all files in the current working directory
+$current_working_directory = Get-Location
+
+$choice = Read-Host "Do you want to replace $text_to_replace with $txt_to_be_replace_with (y/n) : "
+     if($choice -eq "y") {
+
+            Get-ChildItem -Path $current_working_directory | 
+            ForEach-Object {
+                $newName = $_.Name.Replace("$txt_to_replace", "$txt_to_be_replace_with")
+                Write-Output "Renamed : $newName"
+                Rename-Item -Path $_.FullName -NewName $newName }
+
+     } else { Write-Output "No Files have been touched. Goodbye" }
+
+}
+
+function replaceto($txt_to_replace) {
+
+$current_working_directory = Get-Location
+
+switch($txt_to_replace) {
+
+    "dash" {  replace("_","-") }  # Replace all underscores with hyphens in the file names of all files 
+    "underscore" { replace("-","_") } # Replace all hyphens with underscores in the file names of all files
+    Default { Write-Output "Invalid Positional Argument"}
+
+
+} # switch end-bloc
+
+
+}
 #--------------------------------------{ Alphabet-S }--------------------------------------------------
 
 function snippets($script_extension) {
