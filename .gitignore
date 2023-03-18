@@ -24,3 +24,4 @@ matrix/oracle/JSON-Manager/json_manager_config_v2_0.py
 shortkeys.ps1
 .ignored_env_var
 test_setup.ps1
+.readme/
