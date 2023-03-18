@@ -9,7 +9,7 @@
 
   
 </head><body><div id="content">
-    
+<div id="figletContent"></div>   
 <span id="ps1_01"></span> <span id="cd"></span> <br>
 <span id="ps1_02"></span> <span id="cat"></span> <br>
 <span id="std_out_01"></span> <br>
@@ -20,11 +20,14 @@
 <span id="ps1_06"></span> <br>
 <span id="ps1_07"></span> <br>
 
+<script src="setup_site/read_file.js"></script>
 <script src="setup_site/script.js"></script>
 <script src="setup_site/variable_arrays.js"></script>
 
 <script type="text/javascript">
     //------------------------ { MY Functions() }-----------------------------
+
+    TERMINAL_NAME =" Superuser@WindowPC" ;
 
     function replace_excape(url) {
       //const url = 'https://superuser.github.io/about/';
@@ -71,12 +74,10 @@
         // define a function that simulates a typewriter effect on a command line interface
          const typeeffetct = async () => {
 
-        TERMINAL_NAME =" Superuser@WindowPC" ;
-
         await typewriter(terminal_console(TERMINAL_NAME,""), "ps1_01", ps1Delay); 
         await typewriter(command("cd to terminal"), "cd", commandDelay);
         
-        await typewriter(terminal_console(TERMINAL_NAME,"terminal//github"), "ps1_02", ps1Delay); 
+        await typewriter(terminal_console(TERMINAL_NAME,"terminal/github"), "ps1_02", ps1Delay); 
         await typewriter(command("cat welcome.txt"), "cat", commandDelay);
         await typewriter(cat("Hi, I am SuperUser."," Welcome to my github."), "std_out_01", stdoutDelay);
 
