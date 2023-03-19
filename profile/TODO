@@ -35,3 +35,5 @@ PS :/> figlet "TO DO List"
 [ ] creat a powershell script to auto-copy code-snippets to clipboard such as powershell or python parameter-args[]
 [ ] create a script to get a quick overview of the system specification i.e 
 	such as if_python_installed, $home_powershell directory exists or not, powershell v7.3.3 is installed or not
+[ ] Create a hastable that holds the list of all the usefull json files and open these files by passing json to py file.\
+[ ] create a script to list all the pico_payloads and load the script at will
