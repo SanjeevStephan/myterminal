@@ -8,9 +8,11 @@
         alias()
         addtest($filename)                            Add the prefix "test_" to a given string argument 
         alphabet()
+        alphabet_reverse()
         backup()()
         clip($action,$filename) 
         copypath()
+        createlink()
         checkinternet()
         edit($filename)
         figlet($text_to_display)
@@ -20,7 +22,7 @@
         getfilename($script_extension)
         goto($dir_name)
         helptab($task_name)
-        iamonline()
+        iamonline()                                  check-internet
         lst()
         launch($app_name)
         listhash()
@@ -30,7 +32,8 @@
         openfilter()
         psindex()
         paste-temp($script_extension,$filename)
-        pinggoogle()
+        pinggoogle()                                  check-internet
+        pico($action)
         refresh()
         run($script_name_n_url)
         removetest($filename)                         Remove the prefix "test_" from a given string argument
@@ -38,6 +41,8 @@
         replace2dash
         snippets($script_extension)
         showip()
+        stillconnected()
+        sendpayload($filename)
         TODO($action)
         timeperques()
         window()
@@ -68,10 +73,15 @@ Write-Host "$filename successfully renamed to $file_to_be_renamed"
 
 function alphabet() {
 
+cd $paths["study"]
 .$Script["alphabet_position"]
 
 }
+function alphabet_reverse() {
+cd $paths["study"]
+.$Script["alphabet_reverse_position"]
 
+}
 
 #--------------------------------------{ Alphabet-B }--------------------------------------------------
 function backup() {
@@ -105,7 +115,22 @@ function copypath() {
 
 function checkinternet() { test-connection 8.8.8.8 } # Check the connection to the google-dns-server 
 
+function createlink($shortcut_filename) {
+# new-line => [ `n ]
+$location = Get-Location
+$url = Get-Clipboard
+$filename = "$location\$shortcut_filename.url"
+$text_to_write = "[InternetShortcut]`nURL=$url"
 
+Set-Content $filename $text_to_write
+
+if(Test-Path $filename) { 
+    Write-Output "Link : $url"
+    Write-Output "Shortcut Link : $filename Successfully Created "
+}
+else { Write-Output "Failed to create Shorcut Link" }
+
+}
 
 #--------------------------------------{ Alphabet-D }--------------------------------------------------
 
@@ -219,8 +244,15 @@ function goto($dir_name) {
             "matrix"
             {
                 figlet "The Matrix"
-                cd $paths["matrix"]
+                cd $paths["mr_robot"]
                 
+            }
+            "mrrobot" 
+            {
+                figlet("Mr Robot")
+                cd $goto_paths["mr_robot"]
+                dir
+              
             }
             "oracle"
             {
@@ -240,6 +272,19 @@ function goto($dir_name) {
                 figlet("Project")
                 cd $paths["project"]
                 dir
+            }
+            "study"
+            {
+                figlet("Study")
+                cd $goto_paths["study"]
+                dir
+            }
+            "pico" 
+            {
+                figlet("Raspberry Pico")
+                cd $goto_paths["pico"]
+                dir
+              
             }
             Default 
             {
@@ -358,6 +403,24 @@ function paste-temp($script_extension,$filename) {
 
 }
 function pinggoogle() { ping -t 8.8.8.8 } # Ping google-dns-server
+
+function pico($action) { 
+<#
+    action
+        => convert [convert the raspberry pico to circuit-python ]
+        => copy    [copy all the necessary files to the circuit-python  ]
+        => reset   [reset the pico | flash_nuke to the pico drive]
+        => info    [display necessary settings and variables of the setup_script.sp1 ]
+#>
+<#
+if($action -eq "") { Write-Output "No Argument Passed | Try -> pico help" }
+else {    .$script["pico_ducky"] $action  }
+#>
+
+& $script["pico_ducky"] $action
+ 
+
+}
 #--------------------------------------{ Alphabet-Q }--------------------------------------------------
 
 
@@ -436,6 +499,8 @@ Write-Host "$filename successfully renamed to $file_to_be_renamed"
 }
 
 function randommath() {
+figlet "PyMath"
+
 cd $paths["random_math"]
 .$script["random_math"]
 
@@ -520,6 +585,58 @@ $ip_address = ipconfig | Select-String "IPv4 Address" | Select-Object -First 1 |
 & python $script["showip_status"] $ip_address $status   
 #show_prettytable.py
 }
+
+function secret($action,$fileOrDirectory) {
+# show | hide | unhide files in the current working directory
+figlet "Secrets"
+$get_current_location = Get-Location
+
+    switch($action) {
+        "hide" { attrib +s +h "$get_current_location\$fileOrDirectory" }
+        "unhide" { attrib -s -h "$get_current_location\$fileOrDirectory" }
+        "show" { dir $get_current_location -Force }
+        Default { Write-Output "Use syntax -> secreet {hide|unhide|show} <file | dir>" }
+    }
+
+
+}
+
+function stillconnected() {
+
+while($true) {
+        if(Test-Connection google.com -Quiet) {
+            Write-Host ("[{0:T}] [ Connected ] You are connected to the internet" -f (Get-Date))
+        }
+        else {
+            Write-Host ("[{0:T}] [ Disconnected ] No longer connected to the internet" -f (Get-Date))
+        }
+        Start-Sleep -Seconds 2  # wait for 10 seconds before pinging again
+
+    }
+}
+function sendpayload($filename) {
+# Send payload to pico-circuit python
+#$file_to_be_renamed = "test_" + "$filename"
+$current_location = Get-Location
+$replace_payload = "F:\payload.dd"
+
+$file_to_be_send = $filename.Replace(".\","")
+$file_fpath   = "$current_location\$file_to_be_send"
+
+Write-Output "[PAYLOAD] Name : $file_to_be_send"
+Write-Output "[PAYLOAD] Location : $file_fpath"
+Write-Output "[REPLACE] $replace_payload"
+
+if(Test-Path $replace_payload) { 
+    copy $file_to_be_send $replace_payload -Force 
+    Write-Host "Successfully Copied Payload : $file_to_be_send to F:\"
+    }
+else { Write-Output "Payload Location $replace_payload Not-Available" }
+
+
+
+
+}
 #--------------------------------------{ Alphabet-T }--------------------------------------------------
 function TODO($action){
  # Display the TODO-List"
@@ -543,6 +660,8 @@ figlet "Time Per Questions"
 }
 
 #--------------------------------------{ Alphabet-U }--------------------------------------------------
+
+
 
 
 #--------------------------------------{ Alphabet-V }--------------------------------------------------
