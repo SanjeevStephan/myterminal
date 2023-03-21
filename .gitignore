@@ -25,3 +25,4 @@ shortkeys.ps1
 .ignored_env_var
 test_setup.ps1
 .readme/
+taskarray/powershell-script-to-extract-zip-file/v2.zip
