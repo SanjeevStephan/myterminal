@@ -42,7 +42,8 @@
         snippets($script_extension)
         showip()
         stillconnected()
-        sendpayload($filename)
+        safelyremove()
+        payload($action,$filename)
         TODO($action)
         timeperques()
         window()
@@ -286,6 +287,13 @@ function goto($dir_name) {
                 dir
               
             }
+            "payload" 
+            {
+                figlet("Pico Payload")
+                cd $goto_paths["payload"]
+                dir
+              
+            }
             Default 
             {
                 
@@ -404,23 +412,8 @@ function paste-temp($script_extension,$filename) {
 }
 function pinggoogle() { ping -t 8.8.8.8 } # Ping google-dns-server
 
-function pico($action) { 
-<#
-    action
-        => convert [convert the raspberry pico to circuit-python ]
-        => copy    [copy all the necessary files to the circuit-python  ]
-        => reset   [reset the pico | flash_nuke to the pico drive]
-        => info    [display necessary settings and variables of the setup_script.sp1 ]
-#>
-<#
-if($action -eq "") { Write-Output "No Argument Passed | Try -> pico help" }
-else {    .$script["pico_ducky"] $action  }
-#>
-
-& $script["pico_ducky"] $action
- 
-
-}
+function pico($action) { & $script["pico_ducky"] $action }
+function payload($action,$payload_file) { & $script["payload"] $action $payload_file}
 #--------------------------------------{ Alphabet-Q }--------------------------------------------------
 
 
@@ -614,29 +607,7 @@ while($true) {
 
     }
 }
-function sendpayload($filename) {
-# Send payload to pico-circuit python
-#$file_to_be_renamed = "test_" + "$filename"
-$current_location = Get-Location
-$replace_payload = "F:\payload.dd"
-
-$file_to_be_send = $filename.Replace(".\","")
-$file_fpath   = "$current_location\$file_to_be_send"
-
-Write-Output "[PAYLOAD] Name : $file_to_be_send"
-Write-Output "[PAYLOAD] Location : $file_fpath"
-Write-Output "[REPLACE] $replace_payload"
-
-if(Test-Path $replace_payload) { 
-    copy $file_to_be_send $replace_payload -Force 
-    Write-Host "Successfully Copied Payload : $file_to_be_send to F:\"
-    }
-else { Write-Output "Payload Location $replace_payload Not-Available" }
-
-
-
-
-}
+function safelyremove() { & $script["safely_remove"] }
 #--------------------------------------{ Alphabet-T }--------------------------------------------------
 function TODO($action){
  # Display the TODO-List"
