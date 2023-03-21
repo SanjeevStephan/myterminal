@@ -12,13 +12,12 @@ PS :/> figlet "TO DO List"
 [ ] rewrite this Todo list using JSON_TO_MENU
 --------------------------------------------------------------------------
 [ ] gpg and related operational script using JSON_TODO_MENU.py Framework
-[ ] script that list out scripts-name,location-name defined in the profile dictionary
-[ ] cheatsheet script to store and display various commands for {powershell,bash,ssh,gpg,..}
+
 [*] code-snippets and sample examples {python,powershell} in the terminal directory> try (goto codes)
 [*] chatgpt query and response template codes> use { paste-temp gpt4py or gpt4ps1 <filename.{py or ps1}
 [ ] save the all the pythons's score data in the pymath(directory) into single json file(saved_score.json)
 [ ] python script to play morning motivation of andrew-tete from profile terminal> using keyword(motivateme)
-[ ] automate 1st installation process in window using powershell as ur primary script keyword(automate) under terminal
+
 [ ] create a formated-table of gui tool like snippingtool.exe with keywords like (snap) | filename with(*.exe)
 [ ] save config file (.config) under $HOME/.config/pls to backup dir terminal under .config wth different filename  
 [*] create a new repo 'study' -> contains a collection os json dictionaries and exercises to assist me in the preparation
@@ -31,9 +30,23 @@ PS :/> figlet "TO DO List"
 [ ] fill the code-snippets in the $profile_source/.codesnippets directory with usefull and regular use code-snippets
 [ ] write a script to list all the hidden directories [directory list] and hide and unhide[normal] directories
 [ ] Create a powershell script to launch various desktop apps like brave and snipping tool 
+	
+[ ] hastable that holds the list of all the usefull json files and open these files by passing json to py file.\
+[ ] list all the pico_payloads and copy the script to the pico drive with a name F:\payload.dd
+[ ] list the json that contains the important as well as official github repositories and their respective urls
+[ ] build a chat terminal chatBOT to assist you! in your day-to-day activities
+[*] script to setup the RASPBERRY_PICO as an circuit_python HID device to be later used as USB Rubber Ducky
+[ ] fix and improve the script to -> ADD | BACKUP environment_variable. use json to save the variables vice-versa.
+[*] automate 1st installation setup process in window using powershell as ur primary script keyword(automate) under terminal
 [ ] create a master_console in powershell & files should be named [profile_console] located at $profile_source
-[ ] creat a powershell script to auto-copy code-snippets to clipboard such as powershell or python parameter-args[]
-[ ] create a script to get a quick overview of the system specification i.e 
-	such as if_python_installed, $home_powershell directory exists or not, powershell v7.3.3 is installed or not
-[ ] Create a hastable that holds the list of all the usefull json files and open these files by passing json to py file.\
-[ ] create a script to list all the pico_payloads and load the script at will
+[ ] REWRITE the PowerShell Profile Scripts with the focus on the Readibility and Can be easy to maintain
+	-> [] hashtable to hold all the functions names & its uses
+        -> [] hashtable to list all scripts in-use & its scripts-name and its locations defined in the profile dictionary.
+        -> [] hashtable to list all useful JSON Dictionaries and option to edit from the script itself
+	-> [] hashtable to list all the PATHS 
+	-> [] A Help BOT or Manual for PowerShell Profile
+	-> [] cheatsheet script display various commands for {powershell,bash,ssh,gpg,..}
+	-> [] quick overview of the system specification such as if_python_installed and its libraries, 
+	      $home_powershell directory exists or not, powershell v7.3.3 is installed or not
+	-> [] hashtable for regularly used syntax or code-snippts and script to copy code-snippets to clipboard such as powershell or python parameter-args[]
+[ ] script to setup NODE_JS 
