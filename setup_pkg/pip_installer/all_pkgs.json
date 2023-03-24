@@ -23,5 +23,15 @@
         "desc": "natural language tool kit",
         "syntax": "pip install nltk",
         "status": "installed"
+    },
+    "socket": {
+        "desc": "module usefull for Wake-on-LAN (WoL) technology",
+        "syntax": "pip install socket",
+        "status": "installed"
+    },
+    "struct": {
+        "desc": "module usefull for Wake-on-LAN (WoL) technology",
+        "syntax": "pip install struct",
+        "status": "installed"
     }
 }
