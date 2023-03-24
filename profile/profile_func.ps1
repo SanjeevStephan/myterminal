@@ -15,6 +15,7 @@
         createlink()
         checkinternet()
         edit($filename)
+        extract($zipfile)
         figlet($text_to_display)
         filterfile($extension,$substring)
         google()
@@ -152,6 +153,8 @@ figlet "PowerShell ISE"
     }
 
 }
+
+function extract($zipfile){ .$script["extract_zip"] $zipfile}
 #--------------------------------------{ Alphabet-F }--------------------------------------------------
 function figlet($text_to_display){
     & python $script["figlet"] --message $text_to_display
