@@ -56,6 +56,7 @@ $script = @{
             "pico_ducky"        = "D:\mr_robot\pico_ducky\setup_pico_ducky.ps1"
             "payload"           = "D:\mr_robot\pico_ducky\pico_payload.ps1"
             "safely_remove"     = "D:\terminal\taskarray\safely_remove_pen_drive.ps1"
+            "extract_zip"       = "D:\terminal\taskarray\powershell-script-to-extract-zip-file\args_extract_zip_file.ps1"
     
            }
            #https://ss64.com/ps/
