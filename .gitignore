@@ -26,3 +26,4 @@ shortkeys.ps1
 test_setup.ps1
 .readme/
 taskarray/powershell-script-to-extract-zip-file/v2.zip
+taskarray/powershell-operations/.powershell-seven-no-installed.md
