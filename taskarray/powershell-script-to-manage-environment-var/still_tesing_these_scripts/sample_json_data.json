@@ -1,0 +1,14 @@
+[
+      {
+        "Name": "ALLUSERSPROFILE",
+        "Value": "C:\\ProgramData"
+      },
+      {
+        "Name": "APPDATA",
+        "Value": "C:\\Users\\Marcus\\AppData\\Roaming"
+      },
+      {
+        "Name": "CommonProgramFiles",
+        "Value": "C:\\Program Files\\Common Files"
+      }
+]
