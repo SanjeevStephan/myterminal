@@ -1,6 +1,6 @@
 . .\setup_filesdir.ps1
 
-cat D:\terminal\taskarray\powershell-script-to-display-figlet\edit_setup_files
+cat D:\terminal\setup_figlet\edit_setup_files
 
 function editinISE($filename) { powershell_ise.exe $filename }
 

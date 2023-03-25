@@ -14,7 +14,7 @@ $directories = @"
     {"Name": "setup_task",    "Path": "D:\\terminal\\setup_task\\",   "Description": "Signal Script File based Task" },
     {"Name": "setup_tool",    "Path": "D:\\terminal\\setup_tool\\",   "Description": "Setup Related Tools" },
     {"Name": "setup_pkg",     "Path": "D:\\terminal\\setup_pkg\\",    "Description": "Multiple Scripts Pkgs" },
-    {"Name": "setup_figlet",  "Path": "D:\\terminal\\taskarray\\powershell-script-to-display-figlet\\", "Description": "ASCII Figlet saved in textfiles"}
+    {"Name": "setup_figlet",  "Path": "D:\\terminal\\setup_figlet\\", "Description": "ASCII Figlet saved in textfiles"}
 ]
 "@
 
