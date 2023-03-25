@@ -13,7 +13,7 @@ $variable = @{
     Script FEATURES -> enable | disable 
 #>
 $enable = @{
-    "show_task_details" = "disable"
+    "show_task_details" = "enable"
 
 
 }
@@ -22,10 +22,10 @@ $enable = @{
 #>
 $executable = @{
     "test"                    = "yes"
-    "copy_files_dependencies" = "no"
+    "copy_files_dependencies" = "yes"
     "restore_profile"         = "no"
     "install_python"          = "yes"
-    "pip_installer"           = "no"
+    "pip_installer"           = "yes"
 
 
 

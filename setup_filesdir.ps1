@@ -5,7 +5,7 @@ $directories = @{
     "setup_task"         = "D:\terminal\setup_task\"
     "setup_tool"         = "D:\terminal\setup_tool\"
     "setup_pkg"          = "D:\terminal\setup_pkg\"
-    "setup_figlet"       = ""
+    "setup_figlet"       = "D:\terminal\setup_figlet\"
 }
 #>
 

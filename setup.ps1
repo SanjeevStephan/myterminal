@@ -23,10 +23,10 @@ function Beging_Execution() {
     if($choice -eq "y") {
 
         Launch_Script("test")
-        #copy_files_dependencies
+        Launch_Script("copy_files_dependencies")
         Launch_Script("install_python")
         Launch_Script("pip_installer")
-        Launch_Script("copy_files_dependencies")
+
         Manage_Profile("restore")
 
     } elseif ($choice -eq "e" ) { powershell_ise.exe setup_config.ps1 }

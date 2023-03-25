@@ -9,14 +9,14 @@ $func_index = @"
 [
     {"Name": "Display_Figlet($indexNum)",       "File": "setup_func.ps1",   "Description": "Display ASCII Figlet from textfile" },
     {"Name": "ReturnHome()",                    "File": "setup_func.ps1",   "Description": "Return the console back to D:\\terminal" },
-    {"Name": "Overview_Status()",               "File": "setup_func.ps1",    "Description": "This Page that you are reading" },
-    {"Name": "Log($text)",                      "File": "setup_func.ps1", "Description": "Helps to debug script code.pinpoint status"},
-    {"Name": "Launch_Script($executable_title)","File": "setup_func.ps1", "Description": "Launch PowerShell,Python Scripts"},
-    {"Name": "List_Executable_Config()",        "File": "setup_func.ps1", "Description": "List Executable Scripts and its Status"},
-    {"Name": "List_Feature_Config()",           "File": "setup_func.ps1", "Description": "List Features of the Script in-use"},
-    {"Name": "List_Setup_Script()",             "File": "setup_func.ps1", "Description": "List Script in-use"},
-    {"Name": "List_Setup_Variables()",          "File": "setup_func.ps1", "Description": "List Variables in-use"},
-    {"Name": "List_Setup_Functions()",          "File": "setup_func.ps1", "Description": "List Functions in-use"}
+    {"Name": "Overview_Status()",               "File": "setup_func.ps1",   "Description": "This Page that you are reading" },
+    {"Name": "Log($text)",                      "File": "setup_func.ps1",   "Description": "Helps to debug script code.pinpoint status"},
+    {"Name": "Launch_Script($executable_title)","File": "setup_func.ps1",   "Description": "Launch PowerShell,Python Scripts"},
+    {"Name": "List_Executable_Config()",        "File": "setup_func.ps1",   "Description": "List Executable Scripts and its Status"},
+    {"Name": "List_Feature_Config()",           "File": "setup_func.ps1",   "Description": "List Features of the Script in-use"},
+    {"Name": "List_Setup_Script()",             "File": "setup_func.ps1",   "Description": "List Script in-use"},
+    {"Name": "List_Setup_Variables()",          "File": "setup_func.ps1",   "Description": "List Variables in-use"},
+    {"Name": "List_Setup_Functions()",          "File": "setup_func.ps1",   "Description": "List Functions in-use"}
 ]
 "@
 
