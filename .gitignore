@@ -31,3 +31,4 @@ taskarray/online-directory.ps1
 taskarray/remote-desktop-directory.ps1
 taskarray/openssh-directory.ps1
 .ignored_test_json_files
+.sort_this_directoris_soon
