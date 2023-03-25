@@ -1,0 +1,34 @@
+[SCRIPT]  
+	
+[SYNOPSIS]
+	    
+[DESCRIPTION] 
+	This PowerShell script .  
+[FUNCTION]
+	 function name {..}   
+[PARAMETER] -> $
+	
+[ARGUMENT] -> $
+	
+[SYNTAX]
+	
+[EXAMPLE]
+	
+[OUTPUTS]    
+	
+[NOTES]
+	
+[AUTHOR] 
+	-Sanjeev Stephan Murmu
+[LINK]
+	Script-Location ->
+	Help-File       ->
+[LOG]
+
+PS D:\terminal>
+
+
+[HOW_THE_SCRIPT_WORK]
+
+
+

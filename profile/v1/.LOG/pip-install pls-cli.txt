@@ -1,0 +1,1051 @@
+PowerShell 7.3.2
+ ____                        _   _
+/ ___| _   _ _ __   ___ _ __| | | |___  ___ _ __
+\___ \| | | | '_ \ / _ \ '__| | | / __|/ _ \ '__|
+ ___) | |_| | |_) |  __/ |  | |_| \__ \  __/ |
+|____/ \__,_| .__/ \___|_|   \___/|___/\___|_|
+            |_|
+
+
+Command                  Syntax
+-------                  ------
+backup                   backup directory C:\Users\Sanju/Documents/PowerSh…
+helpnow                  Display this help menu
+edit <filename>          edit files in powershell_ise
+window                   open file explorer of the current working directo…
+goto <directory_name>    navigate to directory {py|terminal}
+TODO                     Open TODO List in Nano Editor
+refresh                  reload the Microsoft.PowerShell.Profile.ps1 script
+google                   Send Query to the Google using brave browser
+figlet <text_to_display> display cool figlet ascii text
+run <script_name>        execute script like {pygame|pymath}
+nano <filename>          open files in nano-terminal-editor
+clip <filename|fileurl>  paste the clipboard into the file
+
+Loading personal and system profiles took 551ms.
+PS C:\Users\Sanju> dir
+
+    Directory: C:\Users\Sanju
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          09-02-2023    21:41                .ms-ad
+d----          17-02-2023    07:58                .NEMU
+d----          14-02-2023    08:46                .ssh
+d----          14-02-2023    14:09                .VirtualBox
+d----          05-02-2023    22:26                .vscode
+d-r--          05-02-2023    12:14                3D Objects
+d-r--          05-02-2023    12:14                Contacts
+d-r--          19-02-2023    07:27                Desktop
+d-r--          18-02-2023    12:56                Documents
+d-r--          18-02-2023    23:27                Downloads
+d-r--          05-02-2023    12:14                Favorites
+d-r--          05-02-2023    12:14                Links
+d-r--          05-02-2023    12:14                Music
+lar--          06-02-2023    08:17                OneDrive
+d-r--          19-02-2023    08:50                Pictures
+d-r--          05-02-2023    12:14                Saved Games
+d-r--          05-02-2023    12:15                Searches
+d-r--          12-02-2023    17:46                Videos
+-a---          15-02-2023    17:45            324 .gitconfig
+-a---          13-02-2023    17:44            640 notepad.txt.gpg
+-a---          19-02-2023    00:04            568 sample text
+-a---          17-02-2023    07:58            982 test_mumu_boot.txt
+
+PS C:\Users\Sanju> cat '.\sample text'
+<#
+.SYNOPSIS
+
+
+
+.DESCRIPTION
+
+    This PowerShell script .
+
+.PARAMETER
+
+
+
+.EXAMPLE
+
+
+
+.AUTHOR
+
+    -Sanjeev Stephan Murmu
+
+.LINK
+
+.NOTES
+
+
+.
+-------------------------------|| CODE_BELOW ||-----------------------------
+#>
+
+
+
+<#
+-------------------------------|| CODE_ABOVE ||-----------------------------
+------------------------------|| TERMINAL LOG ||----------------------------
+
+PS D:\terminal>
+
+
+-------------------------------|| HOW THE SCRIPT WORK ||--------------------
+
+
+
+
+#>
+PS C:\Users\Sanju> dir
+
+    Directory: C:\Users\Sanju
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          09-02-2023    21:41                .ms-ad
+d----          17-02-2023    07:58                .NEMU
+d----          14-02-2023    08:46                .ssh
+d----          14-02-2023    14:09                .VirtualBox
+d----          05-02-2023    22:26                .vscode
+d-r--          05-02-2023    12:14                3D Objects
+d-r--          05-02-2023    12:14                Contacts
+d-r--          19-02-2023    07:27                Desktop
+d-r--          18-02-2023    12:56                Documents
+d-r--          18-02-2023    23:27                Downloads
+d-r--          05-02-2023    12:14                Favorites
+d-r--          05-02-2023    12:14                Links
+d-r--          05-02-2023    12:14                Music
+lar--          06-02-2023    08:17                OneDrive
+d-r--          19-02-2023    08:50                Pictures
+d-r--          05-02-2023    12:14                Saved Games
+d-r--          05-02-2023    12:15                Searches
+d-r--          12-02-2023    17:46                Videos
+-a---          15-02-2023    17:45            324 .gitconfig
+-a---          13-02-2023    17:44            640 notepad.txt.gpg
+-a---          19-02-2023    00:04            568 sample text
+-a---          17-02-2023    07:58            982 test_mumu_boot.txt
+
+PS C:\Users\Sanju> cat .\Templates\
+Get-Content: Unable to get content because it is a directory: 'C:\Users\Sanju\Templates\'. Please use 'Get-ChildItem' instead.
+PS C:\Users\Sanju> cat .\test_mumu_boot.txt
+prefetch dlls takes 59 ms
+android version: android_6
+data pattern file exist
+vdiPath: C:\Program Files\MuMu\emulator\nemu\device\\..\vms\nemu-6.0-x64-overseas\nemu-6.0-x64-overseas-disk1.vdi
+patternPath: C:\Program Files\MuMu\emulator\nemu\device\\..\vms\nemu-6.0-x64-overseas\nemu-6.0-x64-overseas-disk1.raw
+print meta data: data_type: 1
+type_1, type: 1, size: 509860352 B, ele_num: 6982
+type_2, type: 2, size: 509860352 B, ele_num: 787
+avail phys: 3544 MB
+prefetch system vdi 486.240723 MB takes 1519 ms
+vdiPath: C:\Program Files\MuMu\emulator\nemu\device\\..\vms\nemu-6.0-x64-overseas\nemu-6.0-x64-overseas-disk2.vdi
+patternPath: C:\Program Files\MuMu\emulator\nemu\device\\..\vms\nemu-6.0-x64-overseas\nemu-6.0-x64-overseas-disk2.raw
+print meta data: data_type: 2
+type_1, type: 1, size: 27291648 B, ele_num: 815
+type_2, type: 2, size: 27291648 B, ele_num: 474
+avail phys: 3545 MB
+prefetch data vdi 26.027344 MB takes 170 ms
+prefetch webengine dll takes 223 ms
+PS C:\Users\Sanju> notepad
+PS C:\Users\Sanju> clip out .\test_mumu_boot.txt
+PS C:\Users\Sanju> clip
+Invalid Input | Try {Clip in <filename> | clip out <filename>}
+PS C:\Users\Sanju> dir
+
+    Directory: C:\Users\Sanju
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          09-02-2023    21:41                .ms-ad
+d----          17-02-2023    07:58                .NEMU
+d----          14-02-2023    08:46                .ssh
+d----          14-02-2023    14:09                .VirtualBox
+d----          05-02-2023    22:26                .vscode
+d-r--          05-02-2023    12:14                3D Objects
+d-r--          05-02-2023    12:14                Contacts
+d-r--          19-02-2023    07:27                Desktop
+d-r--          18-02-2023    12:56                Documents
+d-r--          18-02-2023    23:27                Downloads
+d-r--          05-02-2023    12:14                Favorites
+d-r--          05-02-2023    12:14                Links
+d-r--          05-02-2023    12:14                Music
+lar--          06-02-2023    08:17                OneDrive
+d-r--          19-02-2023    08:50                Pictures
+d-r--          05-02-2023    12:14                Saved Games
+d-r--          05-02-2023    12:15                Searches
+d-r--          12-02-2023    17:46                Videos
+-a---          15-02-2023    17:45            324 .gitconfig
+-a---          13-02-2023    17:44            640 notepad.txt.gpg
+-a---          19-02-2023    00:04            568 sample text
+-a---          17-02-2023    07:58            982 test_mumu_boot.txt
+
+PS C:\Users\Sanju> clip in hello.txt
+PS C:\Users\Sanju> dir
+
+    Directory: C:\Users\Sanju
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          09-02-2023    21:41                .ms-ad
+d----          17-02-2023    07:58                .NEMU
+d----          14-02-2023    08:46                .ssh
+d----          14-02-2023    14:09                .VirtualBox
+d----          05-02-2023    22:26                .vscode
+d-r--          05-02-2023    12:14                3D Objects
+d-r--          05-02-2023    12:14                Contacts
+d-r--          19-02-2023    07:27                Desktop
+d-r--          18-02-2023    12:56                Documents
+d-r--          18-02-2023    23:27                Downloads
+d-r--          05-02-2023    12:14                Favorites
+d-r--          05-02-2023    12:14                Links
+d-r--          05-02-2023    12:14                Music
+lar--          06-02-2023    08:17                OneDrive
+d-r--          19-02-2023    08:50                Pictures
+d-r--          05-02-2023    12:14                Saved Games
+d-r--          05-02-2023    12:15                Searches
+d-r--          12-02-2023    17:46                Videos
+-a---          15-02-2023    17:45            324 .gitconfig
+-a---          19-02-2023    10:39             12 hello.txt
+-a---          13-02-2023    17:44            640 notepad.txt.gpg
+-a---          19-02-2023    00:04            568 sample text
+-a---          17-02-2023    07:58            982 test_mumu_boot.txt
+
+PS C:\Users\Sanju> cat .\hello.txt
+webengine
+PS C:\Users\Sanju> backup
+ _                _                      _
+| |__   __ _  ___| | ___   _ _ __       (_)_ __   __ _
+| '_ \ / _` |/ __| |/ / | | | '_ \ _____| | '_ \ / _` |
+| |_) | (_| | (__|   <| |_| | |_) |_____| | | | | (_| |
+|_.__/ \__,_|\___|_|\_\\__,_| .__/      |_|_| |_|\__, |
+                            |_|                  |___/
+                  __ _ _                             __ _
+ _ __  _ __ ___  / _(_) | ___        ___ ___  _ __  / _(_) __ _ ___
+| '_ \| '__/ _ \| |_| | |/ _ \_____ / __/ _ \| '_ \| |_| |/ _` / __|
+| |_) | | | (_) |  _| | |  __/_____| (_| (_) | | | |  _| | (_| \__ \
+| .__/|_|  \___/|_| |_|_|\___|      \___\___/|_| |_|_| |_|\__, |___/
+|_|                                                       |___/
+
+Please Wait
+VERBOSE: Performing the operation "Copy File" on target "Item: C:\Users\Sanju\Documents\PowerShell\Microsoft.PowerShell_profile.ps1 Destination: D:\terminal\profile\Microsoft.PowerShell_profile.ps1".
+VERBOSE: Performing the operation "Copy File" on target "Item: C:\Users\Sanju\Documents\PowerShell\nano.exe Destination: D:\terminal\profile\nano.exe".
+VERBOSE: Performing the operation "Copy File" on target "Item: C:\Users\Sanju\Documents\PowerShell\profile_config.ps1 Destination: D:\terminal\profile\profile_config.ps1".
+VERBOSE: Performing the operation "Copy File" on target "Item: C:\Users\Sanju\Documents\PowerShell\profile_func.ps1 Destination: D:\terminal\profile\profile_func.ps1".
+VERBOSE: Performing the operation "Copy File" on target "Item: C:\Users\Sanju\Documents\PowerShell\profile_help.ps1 Destination: D:\terminal\profile\profile_help.ps1".
+VERBOSE: Performing the operation "Copy File" on target "Item: C:\Users\Sanju\Documents\PowerShell\profile_include.ps1 Destination: D:\terminal\profile\profile_include.ps1".
+VERBOSE: Performing the operation "Copy File" on target "Item: C:\Users\Sanju\Documents\PowerShell\profile_path.ps1 Destination: D:\terminal\profile\profile_path.ps1".
+VERBOSE: Performing the operation "Copy File" on target "Item: C:\Users\Sanju\Documents\PowerShell\template Destination: D:\terminal\profile\template".
+VERBOSE: Performing the operation "Copy File" on target "Item: C:\Users\Sanju\Documents\PowerShell\TODO Destination: D:\terminal\profile\TODO".
+All Files Copied D:\terminal\profile
+
+    Directory: D:\terminal\profile
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          18-02-2023    13:25                saved
+-a---          19-02-2023    09:50           1774 Microsoft.PowerShell_prof
+                                                  ile.ps1
+-a---          09-02-2023    09:07         792064 nano.exe
+-a---          18-02-2023    15:33            122 profile_config.ps1
+-a---          19-02-2023    10:40           5270 profile_func.ps1
+-a---          18-02-2023    14:11              0 profile_help.ps1
+-a---          18-02-2023    15:31            431 profile_include.ps1
+-a---          19-02-2023    09:35           1590 profile_path.ps1
+-a---          15-02-2023    22:15            568 template
+-a---          18-02-2023    16:37            652 TODO
+
+PS D:\terminal\profile> goto pymath
+                             _   _
+ _ __  _   _ _ __ ___   __ _| |_| |__
+| '_ \| | | | '_ ` _ \ / _` | __| '_ \
+| |_) | |_| | | | | | | (_| | |_| | | |
+| .__/ \__, |_| |_| |_|\__,_|\__|_| |_|
+|_|    |___/
+
+PS D:\pyscripts\pymath> dir
+
+    Directory: D:\pyscripts\pymath
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          17-02-2023    23:17                __pycache__
+-a---          13-02-2023    22:30            555 data.py
+-a---          17-02-2023    16:55            531 hcf-of-input-num.py
+-a---          17-02-2023    16:47            724 hcf.py
+-a---          17-02-2023    21:44            940 lcm-of-input-num.py
+-a---          17-02-2023    15:48            294 lcm-of-random-num.py
+-a---          15-02-2023    13:32           1642 multiply_input.py
+-a---          15-02-2023    15:37           4420 multiply_random.py
+-a---          17-02-2023    20:39            911 pymath.py
+-a---          15-02-2023    15:37             78 saved_score.json
+-a---          13-02-2023    22:30           1560 square_any_number.py
+
+PS D:\pyscripts\pymath> clip
+Invalid Input | Try {Clip in <filename> | clip out <filename>}
+PS D:\pyscripts\pymath> list
+list: The term 'list' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+PS D:\pyscripts\pymath> dir
+
+    Directory: D:\pyscripts\pymath
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          17-02-2023    23:17                __pycache__
+-a---          13-02-2023    22:30            555 data.py
+-a---          17-02-2023    16:55            531 hcf-of-input-num.py
+-a---          17-02-2023    16:47            724 hcf.py
+-a---          17-02-2023    21:44            940 lcm-of-input-num.py
+-a---          17-02-2023    15:48            294 lcm-of-random-num.py
+-a---          15-02-2023    13:32           1642 multiply_input.py
+-a---          15-02-2023    15:37           4420 multiply_random.py
+-a---          17-02-2023    20:39            911 pymath.py
+-a---          15-02-2023    15:37             78 saved_score.json
+-a---          13-02-2023    22:30           1560 square_any_number.py
+
+PS D:\pyscripts\pymath> clip out .\pymath.py
+PS D:\pyscripts\pymath> goto pshell
+ ____                        ____  _          _ _
+|  _ \ _____      _____ _ __/ ___|| |__   ___| | |
+| |_) / _ \ \ /\ / / _ \ '__\___ \| '_ \ / _ \ | |
+|  __/ (_) \ V  V /  __/ |   ___) | | | |  __/ | |
+|_|   \___/ \_/\_/ \___|_|  |____/|_| |_|\___|_|_|
+
+
+
+    Directory: C:\Users\Sanju\Documents\PowerShell
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          19-02-2023    09:50           1774 Microsoft.PowerShell_prof
+                                                  ile.ps1
+-a---          09-02-2023    09:07         792064 nano.exe
+-a---          18-02-2023    15:33            122 profile_config.ps1
+-a---          19-02-2023    10:40           5270 profile_func.ps1
+-a---          18-02-2023    14:11              0 profile_help.ps1
+-a---          18-02-2023    15:31            431 profile_include.ps1
+-a---          19-02-2023    09:35           1590 profile_path.ps1
+-a---          15-02-2023    22:15            568 template
+-a---          18-02-2023    16:37            652 TODO
+
+PS C:\Users\Sanju\Documents\PowerShell> dir
+
+    Directory: C:\Users\Sanju\Documents\PowerShell
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          19-02-2023    09:50           1774 Microsoft.PowerShell_prof
+                                                  ile.ps1
+-a---          09-02-2023    09:07         792064 nano.exe
+-a---          18-02-2023    15:33            122 profile_config.ps1
+-a---          19-02-2023    10:40           5270 profile_func.ps1
+-a---          18-02-2023    14:11              0 profile_help.ps1
+-a---          18-02-2023    15:31            431 profile_include.ps1
+-a---          19-02-2023    09:35           1590 profile_path.ps1
+-a---          15-02-2023    22:15            568 template
+-a---          18-02-2023    16:37            652 TODO
+
+PS C:\Users\Sanju\Documents\PowerShell> mkdir TOOD_
+
+    Directory: C:\Users\Sanju\Documents\PowerShell
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          19-02-2023    10:50                TOOD_
+
+PS C:\Users\Sanju\Documents\PowerShell> mv TODO_ .TODO
+Move-Item: Cannot find path 'C:\Users\Sanju\Documents\PowerShell\TODO_' because it does not exist.
+PS C:\Users\Sanju\Documents\PowerShell> dir
+
+    Directory: C:\Users\Sanju\Documents\PowerShell
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          19-02-2023    10:50                TOOD_
+-a---          19-02-2023    09:50           1774 Microsoft.PowerShell_prof
+                                                  ile.ps1
+-a---          09-02-2023    09:07         792064 nano.exe
+-a---          18-02-2023    15:33            122 profile_config.ps1
+-a---          19-02-2023    10:40           5270 profile_func.ps1
+-a---          18-02-2023    14:11              0 profile_help.ps1
+-a---          18-02-2023    15:31            431 profile_include.ps1
+-a---          19-02-2023    09:35           1590 profile_path.ps1
+-a---          15-02-2023    22:15            568 template
+-a---          18-02-2023    16:37            652 TODO
+
+PS C:\Users\Sanju\Documents\PowerShell> mv TOOD_ .TODO
+PS C:\Users\Sanju\Documents\PowerShell> dir
+
+    Directory: C:\Users\Sanju\Documents\PowerShell
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          19-02-2023    10:50                .TODO
+-a---          19-02-2023    09:50           1774 Microsoft.PowerShell_prof
+                                                  ile.ps1
+-a---          09-02-2023    09:07         792064 nano.exe
+-a---          18-02-2023    15:33            122 profile_config.ps1
+-a---          19-02-2023    10:40           5270 profile_func.ps1
+-a---          18-02-2023    14:11              0 profile_help.ps1
+-a---          18-02-2023    15:31            431 profile_include.ps1
+-a---          19-02-2023    09:35           1590 profile_path.ps1
+-a---          15-02-2023    22:15            568 template
+-a---          18-02-2023    16:37            652 TODO
+
+PS C:\Users\Sanju\Documents\PowerShell> .TODO
+.TODO: The term '.TODO' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+PS C:\Users\Sanju\Documents\PowerShell> cd .\.TODO\
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> dir
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> past-temp list-todo.ps1
+past-temp: The term 'past-temp' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> paste-temp list-todo.ps1
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> nano .\list-todo.ps1
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> clip out D:\pyscripts\pymath\pymath.py
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> dir
+
+    Directory: C:\Users\Sanju\Documents\PowerShell\.TODO
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          19-02-2023    10:52            568 list-todo.ps1
+
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> mv .\list-todo.ps1 .\list-todo.py
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> dir
+
+    Directory: C:\Users\Sanju\Documents\PowerShell\.TODO
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          19-02-2023    10:52            568 list-todo.py
+
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> nano .\list-todo.py
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> nano .\list-todo.py
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> python .\list-todo.py
+  File "C:\Users\Sanju\Documents\PowerShell\.TODO\list-todo.py", line 1
+    <#
+    ^
+SyntaxError: invalid syntax
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> nano .\list-todo.py
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> python .\list-todo.py
+python: can't open file 'D:\\terminal\\py\x0ciglet.py': [Errno 22] Invalid argument
+Enter the item number of the file you want to execute: Traceback (most recent call last):
+  File "C:\Users\Sanju\Documents\PowerShell\.TODO\list-todo.py", line 44, in <module>
+    item_number = int(input("Enter the item number of the file you want to execute: "))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> python .\list-todo.py
+ _____ ___  ____   ___
+|_   _/ _ \|  _ \ / _ \ ___
+  | || | | | | | | | | / __|
+  | || |_| | |_| | |_| \__ \
+  |_| \___/|____/ \___/|___/
+
+
+Enter the item number of the file you want to execute: Traceback (most recent call last):
+  File "C:\Users\Sanju\Documents\PowerShell\.TODO\list-todo.py", line 44, in <module>
+    item_number = int(input("Enter the item number of the file you want to execute: "))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> echo "Sample Text Example" > test.txt
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> dir
+
+    Directory: C:\Users\Sanju\Documents\PowerShell\.TODO
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          19-02-2023    10:56           1489 list-todo.py
+-a---          19-02-2023    10:57             21 test.txt
+
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> python .\list-todo.py
+ _____ ___  ____   ___
+|_   _/ _ \|  _ \ / _ \ ___
+  | || | | | | | | | | / __|
+  | || |_| | |_| | |_| \__ \
+  |_| \___/|____/ \___/|___/
+
+
+Enter the item number of the file you want to execute: Traceback (most recent call last):
+  File "C:\Users\Sanju\Documents\PowerShell\.TODO\list-todo.py", line 44, in <module>
+    item_number = int(input("Enter the item number of the file you want to execute: "))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> python .\list-todo.py
+ _____ ___  ____   ___
+|_   _/ _ \|  _ \ / _ \ ___
+  | || | | | | | | | | / __|
+  | || |_| | |_| | |_| \__ \
+  |_| \___/|____/ \___/|___/
+
+
+[1] test.txt
+Enter the item number of the file you want to execute: 1
+Executing file: test.txt
+Traceback (most recent call last):
+  File "C:\Users\Sanju\Documents\PowerShell\.TODO\list-todo.py", line 54, in <module>
+    exec(open(selected_file).read())
+  File "<string>", line 1
+    Sample Text Example
+           ^^^^
+SyntaxError: invalid syntax
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> python .\list-todo.py
+ _____ ___  ____   ___
+|_   _/ _ \|  _ \ / _ \ ___
+  | || | | | | | | | | / __|
+  | || |_| | |_| | |_| \__ \
+  |_| \___/|____/ \___/|___/
+
+
+[1] test.txt
+Enter the item number of the file you want to execute: 1
+Executing file: test.txt
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> goto py
+ ____        ____            _       _
+|  _ \ _   _/ ___|  ___ _ __(_)_ __ | |_
+| |_) | | | \___ \ / __| '__| | '_ \| __|
+|  __/| |_| |___) | (__| |  | | |_) | |_
+|_|    \__, |____/ \___|_|  |_| .__/ \__|
+       |___/                  |_|
+
+
+    Directory: D:\pyscripts
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          17-02-2023    16:59                algorithm
+d----          15-02-2023    19:54                pycolor
+d----          17-02-2023    23:16                pygame
+d----          17-02-2023    23:17                pymath
+d----          17-02-2023    16:22                pymenu
+d----          15-02-2023    18:17                pyscript101
+-a---          16-02-2023    00:38             66 .gitattributes
+-a---          15-02-2023    22:28            396 figlet.py
+-a---          16-02-2023    00:38           1234 LICENSE
+-a---          16-02-2023    00:38             62 README.md
+
+PS D:\pyscripts> dir
+
+    Directory: D:\pyscripts
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          17-02-2023    16:59                algorithm
+d----          15-02-2023    19:54                pycolor
+d----          17-02-2023    23:16                pygame
+d----          17-02-2023    23:17                pymath
+d----          17-02-2023    16:22                pymenu
+d----          15-02-2023    18:17                pyscript101
+-a---          16-02-2023    00:38             66 .gitattributes
+-a---          15-02-2023    22:28            396 figlet.py
+-a---          16-02-2023    00:38           1234 LICENSE
+-a---          16-02-2023    00:38             62 README.md
+
+PS D:\pyscripts> cd .\pyscript101\
+PS D:\pyscripts\pyscript101> dir
+
+    Directory: D:\pyscripts\pyscript101
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          15-02-2023    17:53                helper
+-a---          24-01-2023    21:44            114 100_home.py
+-a---          24-01-2023    21:44            138 101_hello_world.py
+-a---          24-01-2023    21:44            960 102_get_started.py
+-a---          24-01-2023    21:44           1425 103_syntax.py
+-a---          24-01-2023    21:27            354 104_comments.py
+-a---          25-01-2023    19:16           2490 105_variables.py
+-a---          25-01-2023    19:16            979 106_global.py
+-a---          25-01-2023    02:31              0 107_data_types.py
+-a---          25-01-2023    02:32              0 108_numbers.py
+-a---          25-01-2023    02:33              0 109_casting.py
+-a---          25-01-2023    02:58           3342 110_strings.py
+-a---          25-01-2023    19:16            166 111_slicing_strings.py
+
+PS D:\pyscripts\pyscript101> cd ..
+PS D:\pyscripts> dir
+
+    Directory: D:\pyscripts
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          17-02-2023    16:59                algorithm
+d----          15-02-2023    19:54                pycolor
+d----          17-02-2023    23:16                pygame
+d----          17-02-2023    23:17                pymath
+d----          17-02-2023    16:22                pymenu
+d----          15-02-2023    18:17                pyscript101
+-a---          16-02-2023    00:38             66 .gitattributes
+-a---          15-02-2023    22:28            396 figlet.py
+-a---          16-02-2023    00:38           1234 LICENSE
+-a---          16-02-2023    00:38             62 README.md
+
+PS D:\pyscripts> cd .\pycolor\
+PS D:\pyscripts\pycolor> cd ..
+PS D:\pyscripts> cd .\pymenu\
+PS D:\pyscripts\pymenu> dir
+
+    Directory: D:\pyscripts\pymenu
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          17-02-2023    16:22            858 pymenu-excluded.py
+-a---          17-02-2023    16:22            819 pymenu.py
+
+PS D:\pyscripts\pymenu> cat .\pymenu.py
+import os
+
+# Get the list of Python files in the current directory
+files = [file for file in os.listdir('.') if file.endswith('.py')]
+
+# Display the list of files in the format [item number] filename.py
+for i, file in enumerate(files):
+    print("[{}] {}".format(i+1, file))
+
+# Prompt the user to input the item number of the file they want to execute
+while True:
+    try:
+        item_number = int(input("Enter the item number of the file you wantto execute: "))
+        if item_number < 1 or item_number > len(files):
+            raise ValueError()
+        break
+    except ValueError:
+        print("Invalid input, please enter a valid item number.")
+
+# Execute the selected file
+selected_file = files[item_number-1]
+print("Executing file:", selected_file)
+exec(open(selected_file).read())
+
+PS D:\pyscripts\pymenu> cd ..
+PS D:\pyscripts> dir
+
+    Directory: D:\pyscripts
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          17-02-2023    16:59                algorithm
+d----          15-02-2023    19:54                pycolor
+d----          17-02-2023    23:16                pygame
+d----          17-02-2023    23:17                pymath
+d----          17-02-2023    16:22                pymenu
+d----          15-02-2023    18:17                pyscript101
+-a---          16-02-2023    00:38             66 .gitattributes
+-a---          15-02-2023    22:28            396 figlet.py
+-a---          16-02-2023    00:38           1234 LICENSE
+-a---          16-02-2023    00:38             62 README.md
+
+PS D:\pyscripts> cd .\pygame\
+PS D:\pyscripts\pygame> dir
+
+    Directory: D:\pyscripts\pygame
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          17-02-2023    14:51                __pycache__
+-a---          14-02-2023    17:33             69 data.json
+-a---          13-02-2023    14:33           1938 pygame_alphabet_position.
+                                                  py
+-a---          15-02-2023    15:05           1140 pygame_current_date.py
+-a---          12-02-2023    18:56            598 pygame_test_alphabet2num.
+                                                  py
+-a---          15-02-2023    14:15           2954 pygame_test_multiply.py
+-a---          17-02-2023    16:31           1080 pygame-ex.py
+-a---          19-02-2023    09:40           2913 pygame.py
+-a---          17-02-2023    16:16            819 pymath.py
+
+PS D:\pyscripts\pygame> cat .\pygame.py
+# pygame [script_name]
+# written on 13-feb-203
+# author : Sanjeev Stephan Murmu
+import os
+
+figlet_path = "D:\\terminal\\py\\figlet.py"
+
+list_of_games = {"Learn Alphabet position":"D:\\myscripts\\script.py\\pygame\\learn_alphabet_positions\\python-game-alphabet-position.py",
+                "Muliplicaiton [Calculator]":"D:\\myscripts\\script.py\\pygame\maths\\101_input_multiply.py",
+                "Random Muliplicaiton Game":"D:\\myscripts\\script.py\\pygame\maths\\102_random_multiply.py",
+                "Square Game": "D:\\myscripts\\script.py\\pygame\maths\\100_square.py"
+                }
+
+# Get the length of the dictionary
+length = len(list_of_games)
+
+# Get the values of the dictionary
+paths = list_of_games.values()
+
+# Convert the values into a list
+paths_list = list(paths)
+
+class pygame:
+    def launch():
+        os.system('cls')  # Clears the Screen first
+
+    def displayMsg(path_num=0, msg="pygame"):
+       os.system("python {} --message {}".format(figlet_path,msg)) # display the pygame-welcome test
+       #  os.system('figlet "PyGame"')
+
+    def excuteScript(path_num):
+        #path_num=path_num+1
+        os.system("python {}".format(paths_list[path_num])) # ask the os toexecute our python script | formatting | passing the url of the script.py
+
+    def format_list(list):
+        #for i, item in enumerate(list):
+        #for name, path in list_of_games.items():
+        # Loop through the key-value pairs along with a counter
+        for i, (name, path) in enumerate(list_of_games.items()):
+            game_no = i
+            print("[ {} ] {}".format(game_no,name))         # nicely formate the list using for loop
+            #print("[{}] -> {}".format("Location",path))
+
+    def user_input():
+        choice = int(input("[{}]Select any option (0-{}) :".format("INPUT",str(length-1)))) # Choose any option from 1-3
+
+        if choice == 0:
+            print("Guess Alphabet's Position")
+            pygame.excuteScript(choice)   # execute the script [python-game-alphabet-position.py]
+        elif choice == 1:
+            print("Multiplication Exercise")
+            pygame.excuteScript(choice)   # execute the script [101_input_multiply.py]
+        elif choice == 2:
+            print('Square Exercise')
+            pygame.excuteScript(choice)   # execute the script [102_random_multiply.py]
+        elif choice == 3:
+            print('Square Exercise')
+            pygame.excuteScript(choice)   # execute the script [100_square.py]
+        else :
+            print("Invalid Options")
+
+if __name__ ==  "__main__":
+    pygame.launch()                   # Launch the PyGame
+    pygame.displayMsg()               # Display Welcome - figlet text
+    pygame.format_list(list_of_games) # formate the list -> [1] list-item |[2] list-item
+    pygame.user_input()               # ask the user for input
+PS D:\pyscripts\pygame> goto pshell
+ ____                        ____  _          _ _
+|  _ \ _____      _____ _ __/ ___|| |__   ___| | |
+| |_) / _ \ \ /\ / / _ \ '__\___ \| '_ \ / _ \ | |
+|  __/ (_) \ V  V /  __/ |   ___) | | | |  __/ | |
+|_|   \___/ \_/\_/ \___|_|  |____/|_| |_|\___|_|_|
+
+
+
+    Directory: C:\Users\Sanju\Documents\PowerShell
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          19-02-2023    10:57                .TODO
+-a---          19-02-2023    09:50           1774 Microsoft.PowerShell_prof
+                                                  ile.ps1
+-a---          09-02-2023    09:07         792064 nano.exe
+-a---          18-02-2023    15:33            122 profile_config.ps1
+-a---          19-02-2023    10:40           5270 profile_func.ps1
+-a---          18-02-2023    14:11              0 profile_help.ps1
+-a---          18-02-2023    15:31            431 profile_include.ps1
+-a---          19-02-2023    09:35           1590 profile_path.ps1
+-a---          15-02-2023    22:15            568 template
+-a---          18-02-2023    16:37            652 TODO
+
+PS C:\Users\Sanju\Documents\PowerShell> cd .\.TODO\
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> di
+di: The term 'di' is not recognized as a name of a cmdlet, function, scriptfile, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> dir
+
+    Directory: C:\Users\Sanju\Documents\PowerShell\.TODO
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          19-02-2023    11:01           1539 list-todo.py
+-a---          19-02-2023    10:57             21 test.txt
+
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> python .\list-todo.py
+ _____ ___  ____   ___
+|_   _/ _ \|  _ \ / _ \ ___
+  | || | | | | | | | | / __|
+  | || |_| | |_| | |_| \__ \
+  |_| \___/|____/ \___/|___/
+
+
+[1] test.txt
+Enter the item number of the file you want to execute: 1
+Executing file: test.txt
+Traceback (most recent call last):
+  File "C:\Users\Sanju\Documents\PowerShell\.TODO\list-todo.py", line 55, in <module>
+    os.system("notepad {}".formate(selected_file))
+              ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'formate'. Did you mean: 'format'?
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> python .\list-todo.py
+ _____ ___  ____   ___
+|_   _/ _ \|  _ \ / _ \ ___
+  | || | | | | | | | | / __|
+  | || |_| | |_| | |_| \__ \
+  |_| \___/|____/ \___/|___/
+
+
+[1] test.txt
+Enter the item number of the file you want to execute: 1
+Executing file: test.txt
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> python .\list-todo.py
+ _____ ___  ____   ___
+|_   _/ _ \|  _ \ / _ \ ___
+  | || | | | | | | | | / __|
+  | || |_| | |_| | |_| \__ \
+  |_| \___/|____/ \___/|___/
+
+
+[1] test.txt
+Enter the item number of the file you want to execute: 1
+Opening file: test.txt  in Notepad
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> notepad .\list-todo.py
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> dir
+
+    Directory: C:\Users\Sanju\Documents\PowerShell\.TODO
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          19-02-2023    11:04           1553 list-todo.py
+-a---          19-02-2023    11:03             21 test.txt
+
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> paste-temp todo.py
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> notepad .\todo.py
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> python .\todo.py
+Usage :-
+$ ./todo add "todo item" # Add a new todo
+$ ./todo ls                      # Show remaining todos
+$ ./todo del NUMBER      # Delete a todo
+$ ./todo done NUMBER     # Complete a todo
+$ ./todo help                    # Show usage
+$ ./todo report          # Statistics
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> python .\todo.py add "Speed Maths"
+Added todo: "Speed Maths"
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> python .\todo.py
+Usage :-
+$ ./todo add "todo item" # Add a new todo
+$ ./todo ls                      # Show remaining todos
+$ ./todo del NUMBER      # Delete a todo
+$ ./todo done NUMBER     # Complete a todo
+$ ./todo help                    # Show usage
+$ ./todo report          # Statistics
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> python .\todo.py ls
+[1] Speed Maths
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> dir
+
+    Directory: C:\Users\Sanju\Documents\PowerShell\.TODO
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          19-02-2023    11:04           1553 list-todo.py
+-a---          19-02-2023    11:03             21 test.txt
+-a---          19-02-2023    11:16           3613 todo.py
+-a---          19-02-2023    11:17             13 todo.txt
+
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> cat .\todo.txt
+Speed Maths
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> python .\todo.py add "Mental Maths"
+Added todo: "Mental Maths"
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> cat .\todo.txt
+Speed Maths
+Mental Maths
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> cat .\todo.txt^C
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> new-item launch-todo.ps1
+
+    Directory: C:\Users\Sanju\Documents\PowerShell\.TODO
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          19-02-2023    11:19              0 launch-todo.ps1
+
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> nano .\launch-todo.ps1
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> .\launch-todo.ps1 add "Hello text"
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> .\launch-todo.ps1
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> .\launch-todo.ps1 ls
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> cat .\todo.txt
+Speed Maths
+Mental Maths
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> notepad .\launch-todo.ps1
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> .\launch-todo.ps1 add "hello"
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> .\launch-todo.ps1 todo add "hello"
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> cat .\launch-todo.ps1
+function todo($1,$2) {
+& python ./todo.py $1 $2
+
+}
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> rm .\launch-todo.ps1
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> clip in launch-todo.bat
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> .\launch-todo.bat add "Stephahn"
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> cat .\todo.txt
+Speed Maths
+Mental Maths
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> dir
+
+    Directory: C:\Users\Sanju\Documents\PowerShell\.TODO
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          19-02-2023    11:24             34 launch-todo.bat
+-a---          19-02-2023    11:04           1553 list-todo.py
+-a---          19-02-2023    11:03             21 test.txt
+-a---          19-02-2023    11:16           3613 todo.py
+-a---          19-02-2023    11:18             27 todo.txt
+
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> cat .\launch-todo.bat
+@echo off
+python3 todo.py %1 %2
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> notepad .\launch-todo.bat
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> .\launch-todo.bat add 'h'
+Added todo: "h"
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> .\launch-todo.bat ls
+[3] h
+[2] Mental Maths
+[1] Speed Maths
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> dir
+
+    Directory: C:\Users\Sanju\Documents\PowerShell\.TODO
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          19-02-2023    11:25             33 launch-todo.bat
+-a---          19-02-2023    11:04           1553 list-todo.py
+-a---          19-02-2023    11:03             21 test.txt
+-a---          19-02-2023    11:16           3613 todo.py
+-a---          19-02-2023    11:25             30 todo.txt
+
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> cat .\test.txt
+Sample Text Example
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> rm .\test.txt
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> dir
+
+    Directory: C:\Users\Sanju\Documents\PowerShell\.TODO
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          19-02-2023    11:25             33 launch-todo.bat
+-a---          19-02-2023    11:04           1553 list-todo.py
+-a---          19-02-2023    11:16           3613 todo.py
+-a---          19-02-2023    11:25             30 todo.txt
+
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> cat .\list-todo.py
+"""
+.SYNOPSIS
+
+
+
+.DESCRIPTION
+
+    This Python script .
+
+.PARAMETER
+
+
+
+.EXAMPLE
+
+
+
+.AUTHOR
+
+    -Sanjeev Stephan Murmu
+
+.LINK
+
+.NOTES
+
+
+.
+-------------------------------|| CODE_BELOW ||-----------------------------
+"""
+
+import os
+
+os.system('python D:\\terminal\py\\figlet.py --message "My TODOs"')
+# Get the list of Python files in the current directory
+files = [file for file in os.listdir('.') if file.endswith('.txt') and file!= os.path.basename(__file__)]
+
+# Display the list of files in the format [item number] filename.py
+for i, file in enumerate(files):
+    print("[{}] {}".format(i+1, file))
+
+# Prompt the user to input the item number of the file they want to execute
+while True:
+    try:
+        item_number = int(input("Enter the item number of the file you wantto execute: "))
+        if item_number < 1 or item_number > len(files):
+            raise ValueError()
+        break
+    except ValueError:
+        print("Invalid input, please enter a valid item number.")
+
+# Execute the selected file
+selected_file = files[item_number-1]
+print("Opening file:", selected_file," in Notepad")
+#exec(open(selected_file).read())
+os.system("notepad {}".format(selected_file))
+
+
+"""
+-------------------------------|| CODE_ABOVE ||-----------------------------
+------------------------------|| TERMINAL LOG ||----------------------------
+
+PS D:\terminal>
+
+
+-------------------------------|| HOW THE SCRIPT WORK ||--------------------
+
+
+
+
+"""
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> dir
+
+    Directory: C:\Users\Sanju\Documents\PowerShell\.TODO
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          19-02-2023    11:25             33 launch-todo.bat
+-a---          19-02-2023    11:04           1553 list-todo.py
+-a---          19-02-2023    11:16           3613 todo.py
+-a---          19-02-2023    11:25             30 todo.txt
+
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> python .\list-todo.py
+ __  __         _____ ___  ____   ___
+|  \/  |_   _  |_   _/ _ \|  _ \ / _ \ ___
+| |\/| | | | |   | || | | | | | | | | / __|
+| |  | | |_| |   | || |_| | |_| | |_| \__ \
+|_|  |_|\__, |   |_| \___/|____/ \___/|___/
+        |___/
+
+[1] todo.txt
+Enter the item number of the file you want to execute: 1
+Opening file: todo.txt  in Notepad
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> pip install pls-cli
+PS C:\Users\Sanju\Documents\PowerShell\.TODO> pip install pls-cli
+Collecting pls-cli
+  Downloading pls_cli-0.3.1-py3-none-any.whl (49 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 49.5/49.5 kB 1.2 MB/s eta 0:00:00
+Collecting rich<13.0.0,>=12.4.4
+  Downloading rich-12.6.0-py3-none-any.whl (237 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 237.5/237.5 kB 2.4 MB/s eta 0:00:00
+Collecting typer[all]<0.8.0,>=0.6.1
+  Downloading typer-0.7.0-py3-none-any.whl (38 kB)
+Collecting commonmark<0.10.0,>=0.9.0
+  Downloading commonmark-0.9.1-py2.py3-none-any.whl (51 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 51.1/51.1 kB ? eta 0:00:00
+Collecting pygments<3.0.0,>=2.6.0
+  Downloading Pygments-2.14.0-py3-none-any.whl (1.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 8.0 MB/s eta 0:00:00
+Collecting click<9.0.0,>=7.1.1
+  Downloading click-8.1.3-py3-none-any.whl (96 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 96.6/96.6 kB 5.8 MB/s eta 0:00:00
+Collecting colorama<0.5.0,>=0.4.3
+  Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Collecting shellingham<2.0.0,>=1.3.0
+  Downloading shellingham-1.5.0.post1-py2.py3-none-any.whl (9.4 kB)
+Installing collected packages: commonmark, shellingham, pygments, colorama,rich, click, typer, pls-cli
+Successfully installed click-8.1.3 colorama-0.4.6 commonmark-0.9.1 pls-cli-0.3.1 pygments-2.14.0 rich-12.6.0 shellingham-1.5.0.post1 typer-0.7.0
+
+[notice] A new release of pip is available: 23.0 -> 23.0.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+PS C:\Users\Sanju\Documents\PowerShell\.TODO>
