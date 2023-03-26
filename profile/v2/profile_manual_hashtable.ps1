@@ -1,3 +1,11 @@
+<#
+ __  __                         _   _   _           _   _____     _     _
+|  \/  | __ _ _ __  _   _  __ _| | | | | | __ _ ___| |_|_   _|_ _| |__ | | ___
+| |\/| |/ _` | '_ \| | | |/ _` | | | |_| |/ _` / __| '_ \| |/ _` | '_ \| |/ _ \
+| |  | | (_| | | | | |_| | (_| | | |  _  | (_| \__ \ | | | | (_| | |_) | |  __/
+|_|  |_|\__,_|_| |_|\__,_|\__,_|_| |_| |_|\__,_|___/_| |_|_|\__,_|_.__/|_|\___|
+
+#>
 $manual_home = "$HOME\Documents\PowerShell\.manual"
 
 $manual_url = @{
@@ -6,5 +14,3 @@ $manual_url = @{
 
 }
 
-
-#$manual_url.GetEnumerator() | Format-Table @{label="Title"; expression={$_.Key}}, @{label="Path"; expression={$_.Value}} -AutoSize

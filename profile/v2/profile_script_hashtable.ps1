@@ -1,3 +1,13 @@
+<#
+ ____            _       _     _   _           _   _____     _     _
+/ ___|  ___ _ __(_)_ __ | |_  | | | | __ _ ___| |_|_   _|_ _| |__ | | ___
+\___ \ / __| '__| | '_ \| __| | |_| |/ _` / __| '_ \| |/ _` | '_ \| |/ _ \
+ ___) | (__| |  | | |_) | |_  |  _  | (_| \__ \ | | | | (_| | |_) | |  __/
+|____/ \___|_|  |_| .__/ \__| |_| |_|\__,_|___/_| |_|_|\__,_|_.__/|_|\___|
+                  |_|
+
+#https://ss64.com/ps/
+#>
 $script = @{
             "figlet"            = "D:\terminal\setup_pkg\figlet.py"
             "pymath"            = "D:\pyscripts\pymath\pymath.py"
@@ -20,4 +30,4 @@ $script = @{
             "extract_zip"       = "D:\terminal\taskarray\powershell-script-to-extract-zip-file\args_extract_zip_file.ps1"
     
            }
-           #https://ss64.com/ps/
+    

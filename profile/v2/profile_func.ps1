@@ -1,4 +1,11 @@
-
+<#
+ ____             __ _ _        _____                             _
+|  _ \ _ __ ___  / _(_) | ___  |  ___|   _ _ __   ___   _ __  ___/ |
+| |_) | '__/ _ \| |_| | |/ _ \ | |_ | | | | '_ \ / __| | '_ \/ __| |
+|  __/| | | (_) |  _| | |  __/ |  _|| |_| | | | | (__ _| |_) \__ \ |
+|_|   |_|  \___/|_| |_|_|\___| |_|   \__,_|_| |_|\___(_) .__/|___/_|
+                                                       |_|
+#>
 #-------------------- Include <this-file> in the Below File ----------------
 #. "$HOME\Documents\PowerShell\profile_include.ps1"
 #. $HOME\Documents\PowerShell\profile_path.ps1
@@ -57,6 +64,7 @@
 
 $func_name = @{
     "alias"                    = "made up short-nickname used in-place of the actual command"
+    "addtest <filename>"       = ""
     "backup"                   = "backup directory $HOME/Documents/PowerShell"
     "clip <filename|fileurl>"  = "paste the clipboard into the file"
     "edit <filename>"          = "edit files in powershell_ise"
@@ -78,11 +86,14 @@ $func_name = @{
 }
 #--------------------------------------{ Alphabet-A }--------------------------------------------------
 function alias() {
+
+
     figlet "Get-Alias"
     Get-Alias
 }
 
 function addtest($filename){
+
 #Add the prefix "test_" to a given string argument:
 #$file_to_be_renamed = "test_" + "$filename"
 
@@ -132,6 +143,17 @@ function clip($action,$filename){
   
 }
 function copypath() {
+<#
+.SYNOPSIS
+    send the working directory path to the clipboad
+.SYNTAX
+    copypath
+.PARAMETER
+    no-parameter included
+
+#>
+
+
     $current_directory = Get-Location
     $current_directory | Set-Clipboard
     Write-Output "[Copied] Directory Path: $($current_directory.Path)"
@@ -191,7 +213,7 @@ cd $path["profile"]
 
 foreach ($file in $profile_dependencies.Values) {
     Write-Host "[] Opening File in PowerShell_ISE : $file "
-    # powershell_ise.exe $file
+    powershell_ise.exe $file
     Start-Sleep -Seconds 1
 }
 
@@ -358,7 +380,7 @@ function goto($dir_name) {
 }
 function goodbye(){
     figlet("Good Bye! `nStephan")
-    #shutdown -s -t 00
+    shutdown -s -t 00
 
 }
 #--------------------------------------{ Alphabet-H }--------------------------------------------------
@@ -487,7 +509,7 @@ function payload($action,$payload_file) { & $script["payload"] $action $payload_
 function refresh() {
      figlet "Refreshing"
      cls
-    .$profile
+    . $profile
      cd $path["terminal"]
 }
 
