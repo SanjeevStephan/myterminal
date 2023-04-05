@@ -4,7 +4,6 @@
 .ignored-test
 .terminal-log
 .ignored-pdf-docs
-.test_directory
 *.mp3
 .chatgpt_responses
 code-snippets/format-verb-filename
