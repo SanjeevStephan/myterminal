@@ -27,8 +27,8 @@
 .
 -------------------------------|| CODE_BELOW ||-----------------------------
 #>
-
-setx /m JAVA_HOME "C:\Program Files\Java\jdk11.0.17.8"
+# setEnv("MyJson","C:\Users\Sanju\Documents\PowerShell\myjson\")
+setx /m MyJson "C:\Users\Sanju\Documents\PowerShell\myjson"
 
 <# 
 -------------------------------|| CODE_ABOVE ||-----------------------------

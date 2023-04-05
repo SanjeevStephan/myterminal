@@ -52,7 +52,7 @@
 
 # Set the updated User-level Environmental Variables
 
-[System.Environment]::SetEnvironmentVariable("user_$key", $value, "User")
+[System.Environment]::SetEnvironmentVariable("$key", $value, "User")
 
 
 return $greeting

@@ -3,9 +3,8 @@ You can loop through the keys of the hashtable using a foreach loop and display 
 #>
 
 $files = @{
-    "ALLUSERSPROFILE" = "C:\Users\Marcus\AppData\Roaming"
-    "APPDATA"    = "C:\ProgramData"
-    "CommonProgramFiles"      = "C:\Program Files\Common Files"
+    "myjson"      = "C:\Users\Sanju\Documents\PowerShell\myjson"
+    "myjson2"      = "C:\Users\Sanju\Documents\PowerShell\myjson2"
 }
 
 foreach ($key in $files.Keys) {
